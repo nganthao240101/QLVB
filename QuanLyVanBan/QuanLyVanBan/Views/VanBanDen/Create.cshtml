@@ -40,19 +40,21 @@
                             </div>
                             <div class="form-group">
                                 <label>Cơ quan ban hành</label>
-                                <input class="form-control" type="text" id="CoQuanBanHanh" />
+                                <input class="form-control" type="text" id="CoQuanBanHanh" required />
                             </div>
                             <div class="form-group">
                                 <label for="NgonNgu">Ngôn ngữ</label>
                                 <select class="form-control" value="Tiếng Anh" id="NgonNgu">
-                                    <option selected>Tiếng Anh</option>
+                                    <option value="None">--Chọn--</option>
+                                    <option value="Tiếng Anh">Tiếng Anh</option>
                                     <option>Tiếng Việt</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="DoMat">Độ mật</label>
                                 <select class="form-control" id="MaDoMat">
-                                    <option value="1" selected>Mật</option>
+                                    <option value="None">--Chọn--</option>
+                                    <option value="1">Mật</option>
                                     <option value="2">Tuyệt mật</option>
                                 </select>
                             </div>
@@ -82,13 +84,15 @@
                             <div class="form-group">
                                 <label for="LinhVuc">Lĩnh vực</label>
                                 <select class="form-control" id="LinhVuc">
-                                    <option value="1" selected>CTĐ-CTCT</option>
+                                    <option value="None">--Chọn--</option>
+                                    <option value="1">CTĐ-CTCT</option>
                                     <option value="2">CNTT</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="DoKhan">Độ khẩn</label>
                                 <select class="form-control" id="MaDoKhan">
+                                    <option value="None">--Chọn--</option>
                                     <option value="1" selected>Thường</option>
                                     <option value="2">Hỏa tốc</option>
                                 </select>
@@ -119,7 +123,8 @@
                             <div class="form-group">
                                 <label for="MaLoaiVanBan">Loại văn bản</label>
                                 <select class="form-control" id="MaLoaiVanBan">
-                                    <option value="1" selected>Công văn</option>
+                                    <option value="None">--Chọn--</option>
+                                    <option value="1">Công văn</option>
                                     <option value="2">Nghị quyết</option>
                                 </select>
                             </div>
@@ -141,7 +146,7 @@
                                 <label>File đính kèm</label>
                                 <input type="file" class="form-control-file" id="file" />
                             </div>
-                            <button type="button" class="btn btn-success btn-sm" onclick="addVb()">Nhập mới</button>
+                            <button type="submit" class="btn btn-success btn-sm" onclick="addVb()">Nhập mới</button>
                             <a href="@Url.Action("GetList", "VanBanDen")"><i class="btn btn-warning btn-sm">Quay lại</i></a>
                         </div>
                     </div>
@@ -179,6 +184,10 @@
         const GhiChu = $('#GhiChu').val();
         const TrichYeu = $('#TrichYeu').val();
 
+        if (MaLoaiVanBan == "None" || LinhVuc == "None" || NgonNgu == "None" || MaDoMat == "None" || MaDoKhan == "None") {
+            alert("Vui lòng chọn đầy đủ thông tin");
+            return;
+        }
         $.ajax({
             type: "POST",
             url: "/VanBanDen/Create",

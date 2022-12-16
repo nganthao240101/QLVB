@@ -1,0 +1,59 @@
+﻿@using QuanLyVanBan.Models
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Danh sách văn bản đến</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Mã văn bản</th>
+                        <th>Số văn bản</th>
+                        <th>Ngày văn bản</th>
+                        <th>Cơ quan phát hành</th>
+                        <th>Loại văn bản</th>
+                        <th>Trích yếu</th>
+                        <th>Số bản</th>
+                        <th>Số tờ</th>
+                        <th>Độ mật</th>
+                        <th>Độ khẩn</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                </tfoot>
+                <tbody>
+                    @foreach (VanBanDen vb in ViewBag.VanDen)
+                    {
+                    <tr>
+                        <td>@vb.MaVanBanDen</td>
+                        <td>@vb.SoVanBan</td>
+                        <td>@vb.NgayVanBan</td>
+                        <td>@vb.CoQuanBanHanh</td>
+                        <td>@vb.LoaiVanBan</td>
+                        <td>@vb.TrichYeu</td>
+                        <td>@vb.SoBan</td>
+                        <td>@vb.SoTo</td>
+                        <td>@vb.DoMat</td>
+                        <td>@vb.MaDoKhan</td>
+                        <td>
+                            <div>
+                                <a onclick="xoaVB(@vb.MaVanBanDen)">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                                <a>
+                                    <i class="fas fa-user-edit"></i>
+                                </a>
+                            </div>
+
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

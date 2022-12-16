@@ -1,0 +1,484 @@
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll.config
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.pdb
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe.config
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.rsp
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe.config
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.rsp
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.AppContext.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Console.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Http.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Sockets.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.ValueTuple.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe.config
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.rsp
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\WebGrease.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.pdb
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CoreCompileInputs.cache
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CopyComplete
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.dll
+C:\Users\NGAN\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.pdb
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll.config
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.pdb
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe.config
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.rsp
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe.config
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.rsp
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Console.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.rsp
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\WebGrease.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CopyComplete
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.dll
+C:\Users\Admin\Desktop\HTTT\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.pdb
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll.config
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.pdb
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe.config
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.rsp
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe.config
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.rsp
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.AppContext.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Console.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Http.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Sockets.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.ValueTuple.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe.config
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.rsp
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\WebGrease.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.pdb
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.AssemblyReference.cache
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CoreCompileInputs.cache
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CopyComplete
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.dll
+C:\Users\NGAN\OneDrive - trung501\Desktop\HTTT\project\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.pdb
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CoreCompileInputs.cache
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll.config
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.pdb
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe.config
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.rsp
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe.config
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.rsp
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.AppContext.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Collections.Immutable.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Console.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Globalization.Calendars.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Http.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Sockets.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Reflection.Metadata.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.ValueTuple.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe.config
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.rsp
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe.config
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Extensions.Primitives.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Net.Http.Headers.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Buffers.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Memory.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Numerics.Vectors.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Text.Encodings.Web.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\WebGrease.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Extensions.Primitives.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Net.Http.Headers.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Buffers.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Memory.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Numerics.Vectors.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Text.Encodings.Web.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.pdb
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CopyComplete
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.dll
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.pdb
+D:\Study\Nam 4\HTTT\BTL\QuanLyVanBan\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.AssemblyReference.cache
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll.config
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\QuanLyVanBan.pdb
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.exe.config
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csc.rsp
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.exe.config
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\csi.rsp
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.AppContext.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Collections.Immutable.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Console.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Globalization.Calendars.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Http.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Net.Sockets.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Reflection.Metadata.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.ValueTuple.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.exe.config
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\vbc.rsp
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\roslyn\VBCSCompiler.exe.config
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Extensions.Primitives.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Net.Http.Headers.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Buffers.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Memory.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Numerics.Vectors.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Text.Encodings.Web.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\WebGrease.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\EntityFramework.SqlServer.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Extensions.Primitives.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.Net.Http.Headers.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Buffers.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Memory.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Numerics.Vectors.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Text.Encodings.Web.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Helpers.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Mvc.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Optimization.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Razor.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Deployment.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.WebPages.Razor.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Newtonsoft.Json.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Antlr3.Runtime.pdb
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Net.Http.Formatting.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\System.Web.Http.WebHost.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.AssemblyReference.cache
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CoreCompileInputs.cache
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.csproj.CopyComplete
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.dll
+D:\Study\Nam 4\QuanLyVanBan\QuanLyVanBan\obj\Debug\QuanLyVanBan.pdb

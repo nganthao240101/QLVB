@@ -1,0 +1,205 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using QuanLyVanBan.Models;
+@model  VanBanDen
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Chi tiết văn bản</h6>
+    </div>
+    <div class="card-body">
+        <div class="container-fluid">
+            <form>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Số văn bản</label>
+                            <input class="form-control" type="text" value="@Model.SoVanBan" id="SoVanBan" />
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày văn bản</label>
+                            <input class="form-control" type="date" value="@Model.NgayVanBan" id="NgayVanBan" />
+                        </div>
+                        <div class="form-group">
+                            <label>Ký hiệu văn bản</label>
+                            <input class="form-control" type="text" value="@Model.KyHieuVanBan" id="KyHieuVanBan" />
+                        </div>
+                        <div class="form-group">
+                            <label>Tình trạng văn bản</label>
+                            @{ if (Model.TinhTrang == true)
+                                {
+                                    <input class="form-control"
+                                           style="color:white;background-color:orange" value="Không yêu cầu xử lý" />}
+                                else if (Model.TinhTrang == false)
+                                {
+
+
+                                    <input class="form-control"
+                                           style="color: white; background-color: orange" value="Yêu cầu xử lý" />
+                                }
+                                else
+                                { <input class="form-control"
+                                         value="" />}
+                            }
+
+
+
+                        </div>
+                        <div class="form-group">
+                            <label>Cơ quan phát hành</label>
+                            <input class="form-control" type="text" value="@Model.CoQuanBanHanh" id="CoQuanPhatHanh" />
+                        </div>
+                        <div class="form-group">
+                            <label for="NgonNgu">Ngôn ngữ</label>
+                            <select class="form-control" value="@Model.NgonNgu" id="NgonNgu">
+                                <option selected>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="DoMat">Độ mật</label>
+                            <select class="form-control" value="@Model.MaDoMat" id="DoMat">
+                                <option selected>Mật</option>
+                                <option>Tuyệt mật</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Trạng thái văn bản</label>
+
+                            @{ if (Model.TrangThaiVanBan == true)
+                                {
+                                    <input class="form-control"
+                                           style="color:white;background-color:green" value="Trong thời hạn sử dụng" />}
+                                else
+                                {
+                                    <input class="form-control"
+                                           style="color:red" value="Hết thời hạn sử dụng" />
+                                }
+                            }
+
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày đến</label>
+                            <input class="form-control" type="date" value="@Model.NgayDen" id="NgayDen" />
+                        </div>
+                        <div class="form-group">
+                            <label>Số bản</label>
+                            <input class="form-control" type="text" value="@Model.SoBan" id="SoBan" />
+                        </div>
+                        <div class="form-group">
+                            <label>Họ tên người ký</label>
+                            <input class="form-control" type="text" value="@Model.HoTenNguoiKy" id="HotenNguoiKy" />
+                        </div>
+                        <div class="form-group">
+                            <label>Thủ trưởng duyệt</label>
+                            <input class="form-control" type="text" value="@Model.ThuTruongDuyet" id="ThuTruongDuyet" />
+                        </div>
+                        <div class="form-group">
+                            <label for="LinhVuc">Lĩnh vực</label>
+                            <select class="form-control" value="@Model.MaLinhVuc" id="LinhVuc">
+                                <option selected>CTĐ-CTCT</option>
+                                <option>CNTT</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="DoKhan">Độ khẩn</label>
+                            <select class="form-control" value="@Model.MaDoKhan" id="DoKhan">
+                                <option selected>Thường</option>
+                                <option>Hỏa tốc</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Trạng thái xử lý</label>
+                            @{ if (Model.TrangThaiXuLy == 0)
+                                {
+                                    <input class="form-control"
+                                           style="color:white;background-color:red" value="Nhập mới" />}
+                                else if (Model.TrangThaiXuLy == 1)
+                                {
+                                    <input class="form-control"
+                                           style="color:white;background-color:red" value="Đã duyệt" />
+                                }
+                                else if (Model.TrangThaiXuLy == 2)
+                                {
+                                    <input class="form-control"
+                                           style="color:white;background-color:red" value="Chuyển xử lý" />
+                                }
+                                else if (Model.TrangThaiXuLy == 3)
+                                {
+
+
+                                    <input class="form-control"
+                                           style="color:white;background-color:red" value="Thu hồi" />
+                                }
+                                else
+                                {
+                                    <input class="form-control"
+                                           style="color:white;background-color:red" value="" />
+                                }
+
+                            }
+                        </div>
+                        <div class="form-group">
+                            <label>Hạn giải quyết</label>
+                            <input class="form-control" type="date" value="@Model.HanGiaiQuyet" id="HanGiaiQuyet" />
+                        </div>
+                        <div class="form-group">
+                            <label>Số tờ</label>
+                            <input class="form-control" type="text" value="@Model.SoTo" id="SoTo" />
+                        </div>
+                        <div class="form-group">
+                            <label>Chức vụ người ký</label>
+                            <input class="form-control" type="text" value="@Model.ChucVuNguoiKy" id="ChucVuNguoiKy" />
+                        </div>
+                        <div class="form-group">
+                            <label>Số hồ sơ</label>
+                            <input class="form-control" type="text" value="@Model.SoHoSo" id="SoHoSo" />
+                        </div>
+                        <div class="form-group">
+                            <label for="LoaiVanBan">Loại văn bản</label>
+                            <select class="form-control" value="@Model.MaLoaiVanBan" id="LoaiVanBan">
+                                <option selected>Công văn</option>
+                                <option>Nghị quyết</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày trả bảo mật</label>
+                            <input class="form-control" type="date" value="@Model.NgayTraBaoMat" id="NgayTraBaoMat" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Ghi chú</label>
+                            <input class="form-control" type="text" value="@Model.GhiChu" id="GhiChu" />
+                        </div>
+                        <div class="form-group">
+                            <label>Trích yếu</label>
+                            <textarea class="form-control" rows="3" value="@Model.TrichYeu" id="TrichYeu"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>File đính kèm</label>
+                            <input type="file" class="form-control-file" id="file" />
+                        </div>
+                        <a href="/VanBanDen/Getlist"><i class="btn btn-warning btn-sm">Quay lại</i></a>
+                        <a href="/VanBanDen/VBCanXuLy/@Model.MaVanBanDen"><i class="btn btn-info btn-sm">Chuyển xử lý</i></a>
+                        <a href="/VanBanDen/VBCanThuHoi/@Model.MaVanBanDen"><i class="btn btn-danger btn-sm">Thu Hồi</i></a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</div>

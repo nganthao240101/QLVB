@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "BangThongKe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using QuanLyVanBan.Models
+@model List<VanBanDi>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bang Thong Ke</title>
+</head>
+<body>
+    <h1>HỌC VIỆN KỸ THUẬT QUÂN SỰ</h1>
+    <h3>TIỂU ĐOÀN 1</h3>
+    <br />
+    <h4>SỔ ĐĂNG KÝ VĂN BẢN ĐI</h4>
+    <p>Năm 2022</p>
+    <p>Từ ngày 15/01/2022 đến @DateTime.Now.Date.ToString("dd/MM/yyyy")</p>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">NỘI DUNG THỐNG KÊ</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Số văn bản đi</th>
+                            <th>Ngày văn bản đến</th>
+                            <th>Trích yếu</th>
+                            <th>SL bản</th>
+                            <th>SL tờ</th>
+                            <th>Độ mật</th>
+                            <th>Cơ quan nhận</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (VanBanDi item in Model)
+                            {
+                                <tr>
+                                    <td>@item.SoVanBan</td>
+                                    <td>@item.NgayVanBan</td>
+                                    <td>@item.TrichYeu</td>
+                                    <td>@item.SoBan</td>
+                                    <td>@item.SoTo</td>
+                                    <td>@item.MaDoMat</td>
+                                    <td>@item.DonViNhan</td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    h1, h3, h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3, h4 {
+        font-weight: 600;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        text-decoration: underline;
+    }
+</style>
+</html>
+

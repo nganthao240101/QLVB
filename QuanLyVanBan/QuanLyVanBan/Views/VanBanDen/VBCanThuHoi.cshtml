@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "VBCanThuHoi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using QuanLyVanBan.Models;
+@model  List<VanBanDen>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <div class="row">
+                <div class="col-6"><h6 class="m-0 font-weight-bold text-primary">Danh sách văn bản cần xử lý</h6></div>
+
+                <div class="col-6"> <h6><a class="btn btn-danger" style="float:right" href="/VanBanDen/Create">Quay lại</a></h6></div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mã văn bản</th>
+                            <th>Số văn bản</th>
+                            <th>Ngày văn bản</th>
+                            <th>Trích Yếu</th>
+                            <th>Độ mật</th>
+                            <th>Độ khẩn</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var vb in Model)
+                        {
+                            <tr>
+                                <td>@vb.MaVanBanDen</td>
+                                <td>@vb.SoVanBan</td>
+                                <td>@vb.NgayVanBan</td>
+                                <td>@vb.TrichYeu</td>
+                                <td>@vb.MaDoMat</td>
+                                <td>@vb.MaDoKhan</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <a class="btn btn-info btn-sm" href="/VanBanDen/Details/@vb.MaVanBanDen">
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                        <a class="btn btn-warning btn-sm" href="/VanBanDen/Edit/@vb.MaVanBanDen">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" onclick="xoaVB(@vb.MaVanBanDen)">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(function GetlistVBDen() {
+                $.ajax({
+                    type: "POST",
+
+                    url: "/VanBanDen/GetList",
+
+                    success: function (data) {
+                        /* alert("Ok");*/
+
+                    },
+                    error: function (data) {
+                    }
+
+                })
+            });
+        });
+        const xoaVB = (id) => {
+            console.log(id)
+            $.ajax({
+                type: "POST",
+
+                url: "/VanBanDen/DeleteVB",
+                data: { id: id },
+
+                success: function (data) {
+                    alert("Xóa thành công")
+
+                },
+                error: function (data) {
+                }
+
+            })
+        };
+
+    </script>
+
+</body>
+</html>

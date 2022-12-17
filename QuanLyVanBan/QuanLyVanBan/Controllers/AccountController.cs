@@ -93,19 +93,19 @@ namespace QuanLyVanBan.Controllers
         {
             using (var db = new Model1())
             {
-                var taiKhoan = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap.ToLower() && s.MatKhau == MatKhau).SingleOrDefault();
-                var ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan && s.MaNhomQuyen == groupID).FirstOrDefault();
-                if (ob != null)
+                CaNhan taiKhoan = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap).FirstOrDefault();
+                if (taiKhoan != null && taiKhoan.MatKhau == MatKhau)
                 {
+                    var ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan && s.MaNhomQuyen == groupID).FirstOrDefault();
                     Session["user"] = ob;
                     return RedirectToAction("Index", "Home");
+
                 }
                 else
                 {
                     TempData["Error"] = "Tài khoản không đúng. Vui lòng đăng nhập lại !";
                     return RedirectToAction("Login");
                 }
-
             }
         }
         public ActionResult Dashborad()

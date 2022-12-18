@@ -96,9 +96,10 @@ namespace QuanLyVanBan.Controllers
                 CaNhan taiKhoan = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap).FirstOrDefault();
                 if (taiKhoan != null && taiKhoan.MatKhau == MatKhau)
                 {
-                    var ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan && s.MaNhomQuyen == groupID).FirstOrDefault();
+                    NguoiDung_ChiTietQuyen ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan && s.MaNhomQuyen == groupID).FirstOrDefault();
                     Session["user"] = ob;
-                    return RedirectToAction("Index", "Home");
+                    Session["fullName"] = taiKhoan.TenCaNhan.ToString();
+                    return RedirectToAction("Bieudo", "ThongKe");
 
                 }
                 else
@@ -123,8 +124,7 @@ namespace QuanLyVanBan.Controllers
         public ActionResult Logout()
         {
 
-            Session["id"] = null;
-            Session["user"] = null;
+            Session.Clear();
             return Redirect("~/");
         }
     }

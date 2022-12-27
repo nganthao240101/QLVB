@@ -120,7 +120,23 @@
                             <label>File đính kèm</label>
                             <input type="file" class="form-control-file" id="file" />
                         </div>
-                        <a href="@Url.Action("GetList", "VanBanDen")"><i class="btn btn-warning btn-sm">Quay lại</i></a>
+                        @{
+                            if (Model.TrangThai == 0) 
+                            {
+                                <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Văn Bản Hợp Lệ</i></a>
+                            }
+
+                            else if (Model.TrangThai == 1)
+                            {
+                                <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Xét Duyệt</i></a>
+                            }
+                            else if (Model.TrangThai == 2)
+                            {
+                                <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Phát hành</i></a>
+                            }
+                        }
+                        <a><i class="btn btn-warning btn-sm">Quay lại</i></a>
+
                     </div>
                 </div>
             </form>
@@ -128,3 +144,18 @@
     </div>
 </div>
 
+<script>
+    const changeStatus = (e, status,mavb)=>{
+        $.ajax({
+            method: "Post",
+            url: "/VanBanDi/ChangeStatus",
+            data: {
+                trangThai: status,
+                mavb:mavb
+            },
+            success: (data) => {
+                window.location.href = data;
+            }
+        })
+    }
+</script>

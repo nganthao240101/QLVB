@@ -18,8 +18,19 @@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <div class="row">
-                <div class="col-6"><h6 class="m-0 font-weight-bold text-primary">Danh sách đăng ký văn bản đi</h6></div>
-
+                <div class="col-6">
+                  @*  <h6 class="m-0 font-weight-bold text-primary">Danh sách đăng ký văn bản đi</h6>*@
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Danh sách văn bản đến
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="/VanBanDi/listVBdiDK?trangthai=0">Dự thảo</a></li>
+                        <li><a href="/VanBanDi/listVBdiDK?trangthai=1">Tiểu đoàn duyệt</a></li>
+                        <li><a href="/VanBanDi/listVBdiDK?trangthai=2">Tiểu đoàn đã duyệt</a></li>
+                        <li><a href="/VanBanDi/listVBdiDK?trangthai=3">Đã đăng ký</a></li>
+                    </ul>
+                </div>
+               
                 <div class="col-6">
                     <h6>
                         <a class="btn btn-danger" style="float:right" href="/VanBanDi/createVBdi">Thêm mới</a>
@@ -44,7 +55,7 @@
                             <th>Số bản</th>
                             <th>Số tờ</th>
                             <th>Độ mật</th>
-                            <th>Độ khẩn</th>
+                            <th>Độ khẩn</th> 
                             <th>Trạng thái</th>
                             <th>Actions</th>
                         </tr>
@@ -77,7 +88,7 @@
                                     }
                                     else if (@vb.TrangThai == 2)
                                     {
-                                        <th>Chờ phát hành</th>
+                                        <th>Tiểu đoàn đã duyệt</th>
                                     }
                                     else if (@vb.TrangThai == 3)
                                     {

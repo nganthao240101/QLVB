@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Windows.Documents;
+using static System.Net.WebRequestMethods;
 
 namespace QuanLyVanBan.Controllers
 {
@@ -15,13 +17,18 @@ namespace QuanLyVanBan.Controllers
         {
             return View();
         }
-        public ActionResult listVBdiDK()
+        public ActionResult listVBdiDK(int? trangthai)
         {
             using (Model1 db = new Model1())
             {
-                var list = db.VanBanDis.ToList();
-
+                List<VanBanDi> list = db.VanBanDis.ToList();
+                if (trangthai != null)
+                {
+                    list = db.VanBanDis.Where(s=>s.TrangThai == trangthai).ToList();
+                }
+   
                 return View(list);
+               
             }
         }
         public ActionResult createVBdi()
@@ -113,6 +120,20 @@ namespace QuanLyVanBan.Controllers
             }
             return RedirectToAction("listVBdiDK");
         }
+        public ActionResult ChangeStatus(int trangthai,int mavb)
+        {
+            using (Model1 db = new Model1())
+            {
+                VanBanDi vb = db.VanBanDis.Where(s => s.MaVanBanDi == mavb).FirstOrDefault();
+                if (vb != null)
+                {
 
+                    vb.TrangThai = trangthai + 1;
+                    db.SaveChanges();
+                }
+
+            }
+            return Json("https://localhost:44309/VanBanDi/listVBdiDK?trangthai="+(trangthai+1));
+        }
     }
 }

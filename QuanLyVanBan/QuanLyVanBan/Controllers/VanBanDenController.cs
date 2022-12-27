@@ -17,12 +17,20 @@ namespace QuanLyVanBan.Controllers
             return View();
         }
         //[QuyenTruyCap(idMaQuyen = 1)]
-        public ActionResult GetList()
+        public ActionResult GetList(int? thuhoi)
         {
-
+            
             using (Model1 db = new Model1())
             {
-                List<ListVBden> a = db.Database.SqlQuery<ListVBden>("listVBden").ToList();
+                List<VanBanDen> a;
+                if (thuhoi != null)
+                {
+                     a = db.VanBanDens.Where(s=>s.ThuHoi==false).ToList();
+                }
+                else
+                {
+                     a = db.VanBanDens.ToList();
+                }
                 ViewBag.vbden = a;
                 return View();
             }

@@ -2111,9 +2111,12 @@
     <Content Include="Views\VanBanDen\VBCanXuLy.cshtml" />
     <Content Include="Views\VanBanDi\listVBdiDK.cshtml" />
     <Content Include="Views\VanBanDi\createVBdi.cshtml" />
+    <Content Include="Views\VanBanDi\Detail.cshtml" />
+    <Content Include="Views\VanBanDi\UpdateVBDI.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Files\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

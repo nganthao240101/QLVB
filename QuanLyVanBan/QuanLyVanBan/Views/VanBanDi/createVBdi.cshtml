@@ -19,31 +19,31 @@
         </div>
         <div class="card-body">
             <div class="container-fluid">
-                <form>
+                <form method="post" enctype="multipart/form-data" action="/VanBanDi/addVBdi">
 
                     <div class="row">
                         <div class="col-4">
                             <div class="form-group">
                                 <label>Số văn bản</label>
-                                <input class="form-control" type="text" value=" " id="SoVanBan" />
+                                <input class="form-control" type="text" value="" name="SoVanBan" id="SoVanBan" />
                             </div>
                             <div class="form-group">
                                 <label>Ngày văn bản</label>
-                                <input class="form-control" type="date" id="NgayVanBan" />
+                                <input class="form-control" type="date" name="NgayVanBan" id="NgayVanBan" />
                             </div>
                             <div class="form-group">
                                 <label>Ký hiệu văn bản</label>
-                                <input class="form-control" type="text" id="KyHieuVanBan" />
+                                <input class="form-control" type="text" name="KyHieuVanBan" id="KyHieuVanBan" />
                             </div>
                             <div class="form-group">
                                 <label>Đơn vị nhân</label>
-                                <input class="form-control" type="text" id="DonViNhan" />
+                                <input class="form-control" type="text" name="DonViNhan" id="DonViNhan" />
                             </div>
                             <div class="form-group">
                                 <label for="NgonNgu">Ngôn ngữ</label>
-                                <select class="form-control" value="Tiếng Anh" id="NgonNgu">
-                                    <option selected>Tiếng Anh</option>
-                                    <option>Tiếng Việt</option>
+                                <select class="form-control" value="Tiếng Anh" name="NgonNgu" id="NgonNgu">
+                                    <option value="Tiếng Anh">Tiếng Anh</option>
+                                    <option value="Tiếng Việt">Tiếng Việt</option>
                                 </select>
                             </div>
 
@@ -52,28 +52,30 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label>Trạng thái</label>
-                                <input class="form-control" type="text" id="TrangThai" />
+                                <input class="form-control" type="text" name="TrangThai" id="TrangThai" />
                             </div>
                             <div class="form-group">
                                 <label>Số bản</label>
-                                <input class="form-control" type="text" id="SoBan" />
+                                <input class="form-control" type="text" name="SoBan" id="SoBan" />
                             </div>
                             <div class="form-group">
                                 <label>Họ tên người ký</label>
-                                <input class="form-control" type="text" id="HotenNguoiKy" />
+                                <input class="form-control" type="text" name="HoTenNguoiKy" id="HotenNguoiKy" />
                             </div>
                             <div class="form-group">
                                 <label for="LinhVuc">Lĩnh vực</label>
-                                <select class="form-control" value="CTĐ-CTCT" id="LinhVuc">
-                                    <option selected>CTĐ-CTCT</option>
-                                    <option>CNTT</option>
+                                <select class="form-control" value="1" name="MaLinhVuc" id="LinhVuc">
+                                    <option value="1">Chính trị</option>
+                                    <option value="2">Quân sự - Hành chính</option>
+                                    <option value="3">Hậu cần - Kĩ thuật</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="DoKhan">Độ khẩn</label>
-                                <select class="form-control" value="Hỏa tốc" id="DoKhan">
-                                    <option selected>Thường</option>
-                                    <option>Hỏa tốc</option>
+                                <select class="form-control" value="1" name="MaDoKhan" id="DoKhan">
+                                    <option value="1">Hỏa tốc</option>
+                                    <option value="2">Thượng khẩn</option>
+                                    <option value="3">Khẩn</option>
                                 </select>
                             </div>
 
@@ -81,45 +83,52 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label>Số hồ sơ</label>
-                                <input class="form-control" type="text" id="SoHoSo" />
+                                <input class="form-control" type="text" name="SoHoSo" id="SoHoSo" />
                             </div>
                             <div class="form-group">
                                 <label>Số tờ</label>
-                                <input class="form-control" type="text" id="SoTo" />
+                                <input class="form-control" type="text" name="SoTo" id="SoTo" />
                             </div>
                             <div class="form-group">
                                 <label>Chức vụ người ký</label>
-                                <input class="form-control" type="text" id="ChucVuNguoiKy" />
+                                <input class="form-control" type="text" name="ChucVuNguoiKy" id="ChucVuNguoiKy" />
                             </div>
                             <div class="form-group">
                                 <label for="LoaiVanBan">Loại văn bản</label>
-                                <select class="form-control" value="Công văn" id="LoaiVanBan">
-                                    <option selected>Công văn</option>
-                                    <option>Nghị quyết</option>
+                                <select class="form-control" value="1" name="MaLoaiVanBan" id="LoaiVanBan">
+
+                                    <option value="1">Nghị quyết</option>
+                                    <option value="2">Quyết định</option>
+                                    <option value="3">Chỉ thị</option>
+                                    <option value="4">Thông báo</option>
+                                    <option value="5">Công văn</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="DoMat">Độ mật</label>
-                                <select class="form-control" value="Mật" id="DoMat">
-                                    <option selected>Mật</option>
-                                    <option>Tuyệt mật</option>
+                                <select class="form-control" value="1" name="MaDoMat" id="DoMat">
+                                    <option value="1">Tuyệt mật</option>
+                                    <option value="2">Tối mật</option>
+                                    <option value="3">Mật</option>
+                                   
+                          
                                 </select>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
                                 <label>Ghi chú</label>
-                                <input class="form-control" type="text" id="GhiChu" />
+                                <input class="form-control" type="text" name="GhiChu" id="GhiChu" />
                             </div>
                             <div class="form-group">
                                 <label>Trích yếu</label>
-                                <textarea class="form-control" rows="3" id="TrichYeu"></textarea>
+                                <textarea class="form-control" rows="3" name="TrichYeu" id="TrichYeu"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>File đính kèm</label>
-                                <input type="file" class="form-control-file" id="file" />
+                                <input type="file" name="file" class="form-control-file" id="file" />
                             </div>
-                            <button type="button" class="btn btn-success btn-sm" onclick="addVb()">Nhập mới</button>
+                            <button type="submit" class="btn btn-success btn-sm">Nhập mới</button>
                             <a href="@Url.Action("GetList", "VanBanDen")"><i class="btn btn-warning btn-sm">Quay lại</i></a>
                         </div>
                     </div>

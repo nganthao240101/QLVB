@@ -13,11 +13,12 @@ namespace QuanLyVanBan.Models
         public int idMaQuyen { get; set; }
         public override void OnAuthorization(AuthorizationContext filterContext)
         {
-            NguoiDung_ChiTietQuyen cnSession = (NguoiDung_ChiTietQuyen)HttpContext.Current.Session["user"];
+            int cnSession = (int)HttpContext.Current.Session["nhomQ"];
+            //NguoiDung_ChiTietQuyen cnSession = (NguoiDung_ChiTietQuyen)HttpContext.Current.Session["user"];
             if (cnSession != null)
             {
                 Model1 db = new Model1();
-                var count = db.ChiTietQuyens.Where(s => s.MaNhomQuyen == cnSession.MaNhomQuyen && s.MaQuyen == idMaQuyen).Count();
+                var count = db.ChiTietQuyens.Where(s => s.MaNhomQuyen == cnSession && s.MaQuyen == idMaQuyen).Count();
                 if (count != 0)
                 {
                     return;

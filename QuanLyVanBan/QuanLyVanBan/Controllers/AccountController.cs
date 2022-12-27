@@ -89,25 +89,48 @@ namespace QuanLyVanBan.Controllers
         }
 
         [HttpPost]
-        public ActionResult confirmLogin(string TenDangNhap, string MatKhau, int groupID)
+        public ActionResult confirmLogin(string TenDangNhap, string MatKhau)
         {
             using (var db = new Model1())
             {
                 CaNhan taiKhoan = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap).FirstOrDefault();
                 if (taiKhoan != null && taiKhoan.MatKhau == MatKhau)
                 {
-                    NguoiDung_ChiTietQuyen ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan && s.MaNhomQuyen == groupID).FirstOrDefault();
-                    Session["user"] = ob;
-                    Session["fullName"] = taiKhoan.TenCaNhan.ToString();
-                    return RedirectToAction("Bieudo", "ThongKe");
+                    var ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan).FirstOrDefault();
+                    if (ob != null)
+                    {
+                        Session["user"] = ob;
+                        Session["nhomQ"] = ob.MaNhomQuyen;
+                        Session["fullName"] = taiKhoan.TenCaNhan.ToString();
+
+                        return RedirectToAction("Index", "Home");
+
+
+                    }
 
                 }
                 else
                 {
-                    TempData["Error"] = "Tài khoản không đúng. Vui lòng đăng nhập lại !";
+                    TempData["Error"] = "Tài khoản hoặc mật khẩu không đúng. Vui lòng đăng nhập lại !";
                     return RedirectToAction("Login");
                 }
+                //CaNhan taiKhoan = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap).FirstOrDefault();
+                //if (taiKhoan != null && taiKhoan.MatKhau == MatKhau)
+                //{
+                //    NguoiDung_ChiTietQuyen ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan && s.MaNhomQuyen == groupID).FirstOrDefault();
+                //    Session["user"] = ob;
+                //    Session["fullName"] = taiKhoan.TenCaNhan.ToString();
+                //    return RedirectToAction("Bieudo", "ThongKe");
+
+                //}
+                //else
+                //{
+                //    TempData["Error"] = "Tài khoản không đúng. Vui lòng đăng nhập lại !";
+                //    return RedirectToAction("Login");
+                //}
+               
             }
+            return View();
         }
         public ActionResult Dashborad()
         {

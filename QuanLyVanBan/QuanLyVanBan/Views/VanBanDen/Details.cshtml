@@ -145,7 +145,7 @@
                                 else
                                 {
                                     <input class="form-control"
-                                           style="color:white;background-color:red" value="" />
+                                           style="color:white" value="" />
                                 }
 
                             }
@@ -191,9 +191,47 @@
                             <label>File đính kèm</label>
                             <input type="file" class="form-control-file" id="file" />
                         </div>
+                        @{ NguoiDung_ChiTietQuyen cnSession = (NguoiDung_ChiTietQuyen)HttpContext.Current.Session["user"]; }
+
                         <a href="/VanBanDen/Getlist"><i class="btn btn-warning btn-sm">Quay lại</i></a>
-                        <a href="/VanBanDen/VBCanXuLy/@Model.MaVanBanDen"><i class="btn btn-info btn-sm">Chuyển xử lý</i></a>
-                        <a href="/VanBanDen/VBCanThuHoi/@Model.MaVanBanDen"><i class="btn btn-danger btn-sm">Thu Hồi</i></a>
+                        @{ if (Model.TrangThaiXuLy == 0)
+                            {
+                                if (cnSession.MaNhomQuyen == 1)
+                                {
+                                    <a href="/VanBanDen/GetList?trangThaiXL=1"><i class="btn btn-danger btn-sm">Phê duyệt</i></a>}
+                            }
+
+                            else if (Model.TrangThaiXuLy == 1)
+                            {
+                                if (cnSession.MaNhomQuyen == 1 || cnSession.MaNhomQuyen == 2)
+                                {
+                                    <a href="/VanBanDen/GetList?trangThaiXL=3"><i class="btn btn-danger btn-sm">Chuyển xử lý</i></a>
+                                }
+
+                            }
+                            else if (Model.TrangThaiXuLy == 4)
+                            {
+                                if (cnSession.MaNhomQuyen == 1 || cnSession.MaNhomQuyen == 2)
+                                {
+                                    <a href="/VanBanDen/GetList?trangThaiXL=4"><i class="btn btn-danger btn-sm">Thu Hồi</i></a>
+                                }
+                            }
+                            @*else if (Model.TrangThaiXuLy == 3)
+            {
+
+
+                <input class="form-control"
+                       style="color:white;background-color:red" value="Thu hồi" />
+            }
+            else
+            {
+                <input class="form-control"
+                       style="color:white" value="" />
+            }*@
+
+                        }
+                        @*<a href="/VanBanDen/VBCanXuLy/@Model.MaVanBanDen"><i class="btn btn-info btn-sm">Chuyển xử lý</i></a>
+        <a href="/VanBanDen/VBCanThuHoi/@Model.MaVanBanDen"><i class="btn btn-danger btn-sm">Thu Hồi</i></a>*@
                     </div>
                 </div>
 

@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "getUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="row">
+            <div class="col-6">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    Danh sách người dùng
+
+                    @*<div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Văn bản đến
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=1">Văn bản đã duyệt</a>
+                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=2">Văn bản chuyển xử lý</a>
+                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=3">Văn bản đã thu hồi</a>
+
+                        </div>
+                    </div>*@
+                </h6>
+            </div>
+
+            <div class="col-6">
+                <h6>
+                    <a class="btn btn-danger" style="float:right" href="/Account/Register">Thêm mới</a>
+
+                </h6>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        @*<th>Mã văn bản</th>*@
+                        <th>STT</th>
+                        <th>Mã cá nhân</th>
+                        <th>Tên cá nhân</th>
+                        <th>SĐT</th>
+                        <th>Email</th>
+                        @*<th>Số bản</th>
+                            <th>Số tờ</th>
+                            <th>Độ mật</th>
+                            <th>Độ khẩn</th>*@
+                        <th>Mã đơn vị</th>
+                        <th>Mã chức vụ</th>
+                        <td>Lịch sử truy cập</td>
+                        <th>Actions</th>
+
+                    </tr>
+                </thead>
+                <tfoot>
+                </tfoot>
+                <tbody>
+
+                    @foreach (var cn in ViewBag.listUser)
+                        {
+
+                        <tr>
+                            <td>1</td>
+                            <td>@cn.MaCaNhan</td>
+                            <td>@cn.TenCaNhan</td>
+                            <td>@cn.SDT</td>
+                            <td>@cn.email</td>
+                            <td>@cn.MaDonVi</td>
+                            <td>@cn.MaChucVu</td>
+                            <td>Lịch sử thay đổi</td>
+                            @*<td>@cn.MaDoMat</td>
+                <td>@cn.MaDoKhan</td>*@
+
+
+                            }
+
+
+                            <td>
+                                <div class="d-flex">
+                                    <a class="btn btn-info btn-sm" href="/QLNguoiDung/ChiTietQuyen?maNhomQ=@cn.MaNhomQuyen">
+                                        <i class="fa fa-info"></i>
+                                    </a>
+                                    <a class="btn btn-warning btn-sm" href="/VanBanDen/Edit/@cn.MaCaNhan">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a class="btn btn-danger btn-sm" onclick="xoacn(@cn.MaCaNhan)">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+            <a onclick="exportExcel(event)" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="btnExportExel">
+                <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+

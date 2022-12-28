@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietQuyen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using QuanLyVanBan.Models;
+
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="row">
+            <div class="col-6">
+                <h6 class="m-0 font-weight-bold text-primary">
+
+
+                    @*<div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Văn bản đến
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=1">Văn bản đã duyệt</a>
+                                <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=2">Văn bản chuyển xử lý</a>
+                                <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=3">Văn bản đã thu hồi</a>
+
+                            </div>
+                        </div>*@
+                </h6>
+            </div>
+
+            <div class="col-6">
+                <h6>
+                    <a class="btn btn-danger" style="float:right" href="/Account/Register">Thêm mới</a>
+
+                </h6>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+
+                        <th>STT</th>
+                        <th>Mã nhóm quyền</th>
+                        <th>Tên nhóm quyền</th>
+                        <th>Chức năng</th>
+                        <th>Selected</th>
+
+                    </tr>
+                </thead>
+                <tfoot>
+                </tfoot>
+                <tbody>
+
+                    @using (var db = new Model1())
+                    {
+                        var ob = (from s in db.ChiTietQuyens
+
+                                  select new {s.ChucNang,s.CheckQuyen_ChucNang } ).ToList();
+
+                    ViewBag.objects = ob;
+
+                    foreach (var cn in ob)
+                    {
+
+                    <tr>
+                        <td>1</td>
+                        
+                        @*<td>@cn.MaNhomQuyen</td>
+                        <td>@cn.TenNhomQuyen</td>*@
+                        <td>@cn.ChucNang</td>
+                        <td>
+                            @if (cn.CheckQuyen_ChucNang == true)
+                            {
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                    <label class="custom-control-label" for="customCheck1">1</label>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">1</label>
+                                </div>
+                            }
+                        </td>
+                        
+
+
+
+
+
+                        @*<td>
+                            <div class="d-flex">
+                                <a class="btn btn-info btn-sm" href="/QLNguoiDung/ChiTietQuyen?maCN=@cn.MaCaNhan">
+                                    <i class="fa fa-info"></i>
+                                </a>
+                                <a class="btn btn-warning btn-sm" href="/VanBanDen/Edit/@cn.MaCaNhan">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a class="btn btn-danger btn-sm" onclick="xoacn(@cn.MaCaNhan)">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+
+                            </div>
+
+                        </td>*@
+
+                    </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+            <a onclick="exportExcel(event)" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="btnExportExel">
+                <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

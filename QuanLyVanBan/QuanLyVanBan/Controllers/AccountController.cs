@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using QuanLyVanBan.Support;
 
 namespace QuanLyVanBan.Controllers
 {
     public class AccountController : Controller
     {
+        QuanLyVanBan.Support.Support sp = new QuanLyVanBan.Support.Support();
         // GET: Account
         public ActionResult Index()
         {
@@ -24,7 +26,8 @@ namespace QuanLyVanBan.Controllers
         {
             using (Model1 db = new Model1())
             {
-                CaNhan tenDN = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap).FirstOrDefault();
+               
+                
                 if (MatKhau != RepeatMK)
 
                 {
@@ -34,34 +37,37 @@ namespace QuanLyVanBan.Controllers
                 {
                     TempData["Error"] = "Địa chỉ Email đã được sử dụng";
                 }
-                else if (tenDN == null)
+                else 
                 {
-                    CaNhan obj = new CaNhan();
+                    var tenDN = db.CaNhans.Where(m => m.TenDangNhap == TenDangNhap).FirstOrDefault();
+                    if (tenDN.TenDangNhap==TenDangNhap)
+                    {
+                      
+                            TempData["Error"] = "Tên đăng ký đã tồn tại";
 
-                    obj.TenCaNhan = TenCaNhan;
-                    obj.email = Email;
-                    obj.SDT = SDT;
-                    obj.MaDonVi = MaDonVi;
-                    obj.MaChucVu = MaChucVu;
-                    obj.TenDangNhap = TenDangNhap;
-                    obj.MatKhau = MatKhau;
-                    //db.CaNhans.Add(obj);
-                    //db.SaveChanges();
-                    if (insertTK(obj) == true)
-                    {
-                        TempData["Success"] = "Đăng ký thành công";
                     }
-                    else
-                    {
-                        TempData["Error"] = "Thất Bại";
+                    else {
+                        CaNhan cn = new CaNhan();
+                        cn.TenCaNhan = TenCaNhan;
+                        cn.email = Email;
+                        cn.SDT = SDT;
+                        cn.MaDonVi = MaDonVi;
+                        cn.MaChucVu = MaChucVu;
+                        cn.TenDangNhap = TenDangNhap;
+                        cn.MatKhau = sp.EncodePassword(MatKhau); 
+                        db.CaNhans.Add(cn);
+                        db.SaveChanges();
+                        return Json("Đăng kí thành công");
                     }
+                    
                 }
+                return Json("Đăng kí thất bại ");
 
-                return RedirectToAction("Register");
+
 
             }
         }
-        //false: tồn tại, 
+
         public bool checkEmail(string Email)
         {
             using (var db = new Model1())
@@ -79,6 +85,7 @@ namespace QuanLyVanBan.Controllers
             using (var db = new Model1())
             {
                 db.CaNhans.Add(cn);
+                db.SaveChanges();
                 return true;
             }
 
@@ -93,6 +100,7 @@ namespace QuanLyVanBan.Controllers
         {
             using (var db = new Model1())
             {
+                MatKhau = sp.EncodePassword(MatKhau);
                 CaNhan taiKhoan = db.CaNhans.Where(s => s.TenDangNhap == TenDangNhap).FirstOrDefault();
                 if (taiKhoan != null && taiKhoan.MatKhau == MatKhau)
                 {

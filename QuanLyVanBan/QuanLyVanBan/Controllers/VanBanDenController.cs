@@ -84,7 +84,6 @@ namespace QuanLyVanBan.Controllers
 
         [QuyenTruyCap(idMaQuyen = 3)]
         [HttpPost]
-       
         public ActionResult DeleteVB(int? id)
         {
             using (Model1 db = new Model1())
@@ -152,7 +151,7 @@ namespace QuanLyVanBan.Controllers
                 }
                
             }
-            return RedirectToAction("listVBdiDK");
+            return RedirectToAction("getList");
 
         }
 

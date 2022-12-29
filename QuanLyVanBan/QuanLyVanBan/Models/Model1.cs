@@ -23,6 +23,7 @@ namespace QuanLyVanBan.Models
         public virtual DbSet<NguoiDung_ChiTietQuyen> NguoiDung_ChiTietQuyen { get; set; }
         public virtual DbSet<NhomQuyen> NhomQuyens { get; set; }
         public virtual DbSet<Quyen> Quyens { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<VanBanDen> VanBanDens { get; set; }
         public virtual DbSet<VanBanDi> VanBanDis { get; set; }
         public virtual DbSet<LichSuThayDoi> LichSuThayDois { get; set; }

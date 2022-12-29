@@ -18,7 +18,7 @@
         </div>
         <div class="card-body">
             <div class="container-fluid">
-                <form  method="post" enctype="multipart/form-data" action="/VanBanDen/Create">
+                <form  method="post" enctype="multipart/form-data" action="/QLNguoiDung/create">
 
                     <div class="row">
                         <div class="col-4">
@@ -35,8 +35,14 @@
                                 <input class="form-control" type="text" name="KyHieuVanBan" id="KyHieuVanBan" />
                             </div>
                             <div class="form-group">
-                                <label>Tình trạng văn bản</label>
-                                <input class="form-control" type="text" name="TinhTrangVanBan" id="TinhTrang" />
+                               <div class="form-group">
+                                <label for="TinhTrang">Độ mật</label>
+                                <select class="form-control" name="TinhTrang" id="MaDoMat">
+                                    <option value="null" selected>--Chon--</option>
+                                    <option value="true">Yêu cầu xử lý</option>
+                                    <option value="false">Không yêu cầu xử lý</option>
+                                </select>
+                            </div>
                             </div>
                             <div class="form-group">
                                 <label>Cơ quan ban hành</label>
@@ -45,7 +51,7 @@
                             <div class="form-group">
                                 <label for="NgonNgu">Ngôn ngữ</label>
                                 <select class="form-control" name="NgonNgu" id="NgonNgu">
-                                    <option selected>--Chon--</option>
+                                    <option value="null" selected>--Chon--</option>
                                     <option value="Tiếng Anh">Tiếng Anh</option>
                                     <option value="Tiếng Việt">Tiếng Việt</option>
                                 </select>
@@ -53,7 +59,7 @@
                             <div class="form-group">
                                 <label for="MaDoMat">Độ mật</label>
                                 <select class="form-control" name="MaDoMat" id="MaDoMat">
-                                    <option selected>--Chon--</option>
+                                    <option value="null" selected>--Chon--</option>
                                     <option value="1">Mật</option>
                                     <option value="2">Tuyệt mật</option>
                                 </select>
@@ -63,7 +69,11 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label>Trạng thái văn bản</label>
-                                <input class="form-control" type="text" name="TrangThaiVanBan" id="TrangThaiVanBan" />
+                                <select class="form-control" name="TrangThaiVanBan" id="TrangThaiVanBan">
+                                    <option value="null" selected>--Chon--</option>
+                                    <option value="true">Trong thời hạn sử dụng</option>
+                                    <option value="false">Hết thời hạn sử dụng</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label>Ngày đến</label>
@@ -84,7 +94,7 @@
                             <div class="form-group">
                                 <label for="LinhVuc">Lĩnh vực</label>
                                 <select class="form-control" name="MaLinhVuc" id="LinhVuc">
-                                    <option selected>--Chọn--</option>
+                                    <option value="null" selected>--Chọn--</option>
                                     <option value="1">Chính trị</option>
                                     <option value="2">Quân sự</option>
                                     <option value="3">Hậu cần kĩ thuật</option>
@@ -94,7 +104,7 @@
                             <div class="form-group">
                                 <label for="DoKhan">Độ khẩn</label>
                                 <select class="form-control" name="MaDoKhan" id="MaDoKhan">
-                                    <option selected>--Chọn--</option>
+                                    <option value="null" selected>--Chọn--</option>
                                     <option value="1">Hỏa tốc</option>
                                     <option value="2">Thượng khẩn</option>
                                     <option value="3">Khẩn</option>
@@ -105,7 +115,8 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label>Trạng thái xử lý</label>
-                                <input class="form-control" type="text" name="TrangThaiXuLy" id="TrangThaiXuLy" />
+                                <input class="form-control" type="date" value="Nhập mới" name="TrangThaiVanBan" id="TrangThaiVanBan" />
+                                
                             </div>
                             <div class="form-group">
                                 <label>Hạn giải quyết</label>
@@ -126,7 +137,7 @@
                             <div class="form-group">
                                 <label for="MaLoaiVanBan">Loại văn bản</label>
                                 <select class="form-control" name="MaLoaiVanBan" id="MaLoaiVanBan">
-                                    <option selected>--Chọn--</option>
+                                    <option value="null" selected>--Chọn--</option>
                                     <option value="1">Quyết định</option>
                                     <option value="2">Công văn</option>
                                     <option value="3">Nghị quyết</option>

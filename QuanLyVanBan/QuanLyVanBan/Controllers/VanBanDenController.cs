@@ -106,22 +106,23 @@ namespace QuanLyVanBan.Controllers
         }
         //[QuyenTruyCap(idMaQuyen = 2)]
         [HttpPost]
-        public ActionResult EditVanBan(VanBanDen model, int MaVanBanDen, HttpPostedFileBase file)
+        public ActionResult EditVanBan(VanBanDen model)
         {
             using (Model1 db = new Model1())
             {
-                VanBanDen vb = db.VanBanDens.Where(s => s.MaVanBanDen == MaVanBanDen).FirstOrDefault();
+                NguoiDung_ChiTietQuyen cn = (NguoiDung_ChiTietQuyen)Session["user"];
+                VanBanDen vb = db.VanBanDens.Where(s => s.MaVanBanDen == model.MaVanBanDen).FirstOrDefault();
+                LichSuThayDoi ls = new LichSuThayDoi();
+                ls.MaVanBanDen = model.MaVanBanDen;
+                ls.NoiDung = "Đã chỉnh sửa nội dung văn bản";
+                ls.MaCaNhan = cn.MaCaNhan;
+                ls.ThoiGianThucHien = DateTime.Now;
+                db.LichSuThayDois.Add(ls);
+                db.SaveChanges();
                 if (vb != null)
                 {
-                    string _FileName = "";
-                    if (file != null && file.ContentLength > 0)
-                    {
-                        _FileName = Path.GetFileName(file.FileName);
-                        string _path = Path.Combine(Server.MapPath("~/Public"), _FileName);
-                        file.SaveAs(_path);
-
-                    }
-                
+                   
+                    
                     vb.SoVanBan = model.SoVanBan;
                     vb.NgayVanBan = model.NgayVanBan;
                     vb.KyHieuVanBan = model.KyHieuVanBan;
@@ -144,7 +145,7 @@ namespace QuanLyVanBan.Controllers
                     vb.NgayTraBaoMat = model.NgayTraBaoMat;
                     vb.GhiChu = model.GhiChu;
                     vb.TrichYeu = model.TrichYeu;
-                    vb.C_file = _FileName;
+            
                     db.SaveChanges();
 
                 }

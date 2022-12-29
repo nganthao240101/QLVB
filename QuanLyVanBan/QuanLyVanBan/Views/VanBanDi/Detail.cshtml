@@ -124,16 +124,17 @@
     
                         </textarea>
                         @{
-                            if (Model.TrangThai == 0)
-                            {
+                                        NguoiDung_ChiTietQuyen q = (NguoiDung_ChiTietQuyen)Session["user"];
+                                        if (Model.TrangThai == 0 && q.MaNhomQuyen==2)
+                                        {
                                 <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Văn Bản Hợp Lệ</i></a>
                             }
 
-                            else if (Model.TrangThai == 1)
+                            else if (Model.TrangThai == 1 && q.MaNhomQuyen==1)
                             {
-                                <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Xét Duyệt</i></a>
+                                <a  onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Xét Duyệt</i></a>
                             }
-                            else if (Model.TrangThai == 2)
+                            else if (Model.TrangThai == 2 && q.MaNhomQuyen==2)
                             {
                                 <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Phát hành</i></a>
                             }

@@ -17,13 +17,21 @@ namespace QuanLyVanBan.Controllers
         {
             return View();
         }
+        [QuyenTruyCap(idMaQuyen = 1)]
         public ActionResult listVBdiDK(int? trangthai)
         {
             using (Model1 db = new Model1())
             {
+                NguoiDung_ChiTietQuyen q = (NguoiDung_ChiTietQuyen)Session["user"];
+
                 CaNhan canha = (CaNhan)Session["canhan"];
                 List<VanBanDi> list = db.VanBanDis.ToList();
 
+                List<VanBanDi> list = db.VanBanDis.ToList();
+                if (q.MaNhomQuyen == 4)
+                {
+                     list = db.VanBanDis.Where(s => s.MaDonVi == canha.MaDonVi).ToList();
+                }
                 if (trangthai != null)
                 {
                     list = db.VanBanDis.Where(s=>s.TrangThai == trangthai).ToList();
@@ -33,6 +41,7 @@ namespace QuanLyVanBan.Controllers
                
             }
         }
+        [QuyenTruyCap(idMaQuyen =4)]
         public ActionResult createVBdi()
         {
             return View();
@@ -55,11 +64,19 @@ namespace QuanLyVanBan.Controllers
             }
             return RedirectToAction("listVBdiDK");
         }
+        [QuyenTruyCap(idMaQuyen =3)]
         [HttpPost]
         public ActionResult DeleteVBDi(int mavb)
         {
             using (Model1 db = new Model1())
             {
+                NguoiDung_ChiTietQuyen cn = (NguoiDung_ChiTietQuyen)Session["user"];
+                LichSuThayDoi ls = new LichSuThayDoi();
+                ls.NoiDung = "Đã xóa văn bản đi";
+                ls.MaCaNhan = cn.MaCaNhan;
+                ls.ThoiGianThucHien = DateTime.Now;
+                ls.MaVanBanDi = mavb;
+                db.LichSuThayDois.Add(ls);
                 VanBanDi vb = db.VanBanDis.Find(mavb);
                 db.VanBanDis.Remove(vb);
                 db.SaveChanges();
@@ -82,6 +99,7 @@ namespace QuanLyVanBan.Controllers
                 return View(vb);
             }
         }
+        [QuyenTruyCap(idMaQuyen =2)]
         [HttpPost]
         [ValidateInput(false)]
         public ActionResult Update(VanBanDi model,int mavb, HttpPostedFileBase file,string content)
@@ -91,6 +109,13 @@ namespace QuanLyVanBan.Controllers
                 VanBanDi vb = db.VanBanDis.Where(s => s.MaVanBanDi == mavb).FirstOrDefault();
                 if (vb != null)
                 {
+                    NguoiDung_ChiTietQuyen cn = (NguoiDung_ChiTietQuyen)Session["user"];
+                    LichSuThayDoi ls = new LichSuThayDoi();
+                    ls.NoiDung = "Đã chỉnh sửa bản đi";
+                    ls.MaCaNhan = cn.MaCaNhan;
+                    ls.ThoiGianThucHien = DateTime.Now;
+                    ls.MaVanBanDi = mavb;
+                    db.LichSuThayDois.Add(ls);
                     string _FileName = "";
                     if (file != null && file.ContentLength > 0)
                     {
@@ -123,6 +148,7 @@ namespace QuanLyVanBan.Controllers
             }
             return RedirectToAction("listVBdiDK");
         }
+        [QuyenTruyCap(idMaQuyen = 2)]
         public ActionResult ChangeStatus(int trangthai,int mavb)
         {
             using (Model1 db = new Model1())
@@ -142,16 +168,26 @@ namespace QuanLyVanBan.Controllers
         {
             return View();
         }
+        [QuyenTruyCap(idMaQuyen = 4)]
         [HttpPost]
         [ValidateInput(false)]
         public ActionResult SoanThaoND(VanBanDi content)
         {
             using(Model1 db = new Model1())
             {
+                NguoiDung_ChiTietQuyen cn = (NguoiDung_ChiTietQuyen)Session["user"];
+                LichSuThayDoi ls = new LichSuThayDoi();
+                ls.NoiDung = "Đã thêm mới văn bản đi";
+                ls.MaCaNhan = cn.MaCaNhan;
+                ls.ThoiGianThucHien = DateTime.Now;
+                
+                db.LichSuThayDois.Add(ls);
                 CaNhan user = (CaNhan)Session["canhan"];
                 content.MaDonVi = user.MaDonVi;
                 db.VanBanDis.Add(content);
                 db.SaveChanges();
+           
+
                 return RedirectToAction("listVBdiDK");
             }
         }

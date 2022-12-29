@@ -14,7 +14,7 @@
     </div>
     <div class="card-body">
         <div class="container-fluid">
-            <form>
+            <form method="post" action="/VanBanDen/EditVanBan">
 
                 <div class="row">
                     <div class="col-4">
@@ -22,36 +22,38 @@
 
                             <label>Số văn bản</label>
                             <input class="form-control" type="text" value="@Model.SoVanBan" id="SoVanBan" />
-                            <input hidden class="form-control" type="text" value="@Model.MaVanBanDen" id="MaVanBanDen" />
+                            <input hidden class="form-control" type="text" value="@Model.MaVanBanDen" name="MaVanBanDen" id="MaVanBanDen" />
                         </div>
                         <div class="form-group">
                             <label>Ngày văn bản</label>
-                            <input class="form-control" type="date" value="@Model.NgayVanBan" id="NgayVanBan" />
+                            <input class="form-control" type="date" value="@Model.NgayVanBan" name="NgayVanBan" id="NgayVanBan" />
                         </div>
                         <div class="form-group">
                             <label>Ký hiệu văn bản</label>
-                            <input class="form-control" type="text" value="@Model.KyHieuVanBan" id="KyHieuVanBan" />
+                            <input class="form-control" type="text" value="@Model.KyHieuVanBan" name="KyHieuVanBan" id="KyHieuVanBan" />
                         </div>
                         <div class="form-group">
                             <label>Tình trạng văn bản</label>
-                            <input class="form-control" type="text" value="@Model.TinhTrang" id="TinhTrangVanBan" />
+                            <input class="form-control" type="text" value="@Model.TinhTrang" name="TinhTrang" id="TinhTrangVanBan" />
                         </div>
                         <div class="form-group">
                             <label>Cơ quan phát hành</label>
-                            <input class="form-control" type="text" value="@Model.CoQuanBanHanh" id="CoQuanPhatHanh" />
+                            <input class="form-control" type="text" value="@Model.CoQuanBanHanh" name="CoQuanBanHanh" id="CoQuanPhatHanh" />
                         </div>
                         <div class="form-group">
                             <label for="NgonNgu">Ngôn ngữ</label>
-                            <select class="form-control" value="@Model.NgonNgu" id="NgonNgu">
-                                <option selected>Tiếng Anh</option>
-                                <option>Tiếng Việt</option>
+                            <select class="form-control" name="NgonNgu" value="@Model.NgonNgu" id="NgonNgu">
+                                <option value="Tiếng Anh">Tiếng Anh</option>
+                                <option value="Tiếng Việt">Tiếng Việt</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="DoMat">Độ mật</label>
-                            <select class="form-control" value="@Model.MaDoMat" id="DoMat">
-                                <option selected>Mật</option>
-                                <option>Tuyệt mật</option>
+                            <select class="form-control"  name="MaDoMat" id="DoMat">
+                                <option value="1">Tuyệt mật</option>
+                                <option value="2">Tối mật</option>
+                                <option value="3">Mật</option>
+
                             </select>
                         </div>
 
@@ -59,36 +61,38 @@
                     <div class="col-4">
                         <div class="form-group">
                             <label>Trạng thái văn bản</label>
-                            <input class="form-control" type="text" value="@Model.TrangThaiVanBan" id="TrangThaiVanBan" />
+                            <input class="form-control" type="text" value="@Model.TrangThaiVanBan" name="TrangThaiVanBan" id="TrangThaiVanBan" />
                         </div>
                         <div class="form-group">
                             <label>Ngày đến</label>
-                            <input class="form-control" type="date" value="@Model.NgayDen" id="NgayDen" />
+                            <input class="form-control" type="date" value="@Model.NgayDen" name="NgayDen" id="NgayDen" />
                         </div>
                         <div class="form-group">
                             <label>Số bản</label>
-                            <input class="form-control" type="text" value="@Model.SoBan" id="SoBan" />
+                            <input class="form-control" type="text" value="@Model.SoBan" name="SoBan" id="SoBan" />
                         </div>
                         <div class="form-group">
                             <label>Họ tên người ký</label>
-                            <input class="form-control" type="text" value="@Model.HoTenNguoiKy" id="HotenNguoiKy" />
+                            <input class="form-control" type="text" value="@Model.HoTenNguoiKy" name="HoTenNguoiKy" id="HotenNguoiKy" />
                         </div>
                         <div class="form-group">
                             <label>Thủ trưởng duyệt</label>
-                            <input class="form-control" type="text" value="@Model.ThuTruongDuyet" id="ThuTruongDuyet" />
+                            <input class="form-control" type="text" value="@Model.ThuTruongDuyet" name="ThuTruongDuyet" id="ThuTruongDuyet" />
                         </div>
                         <div class="form-group">
                             <label for="LinhVuc">Lĩnh vực</label>
-                            <select class="form-control" value="@Model.MaLinhVuc" id="LinhVuc">
-                                <option selected>CTĐ-CTCT</option>
-                                <option>CNTT</option>
+                            <select class="form-control" selected name="MaLinhVuc" id="LinhVuc">
+                                <option value="@Model.MaLinhVuc">Chính trị</option>
+                                <option value="@Model.MaLinhVuc">Quân sự - Hành chính</option>
+                                <option value="@Model.MaLinhVuc">Hậu cần - Kĩ thuật</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="DoKhan">Độ khẩn</label>
-                            <select class="form-control" value="@Model.MaDoKhan" id="DoKhan">
-                                <option selected>Thường</option>
-                                <option>Hỏa tốc</option>
+                            <select class="form-control" name="MaDoKhan" id="DoKhan">
+                                <option value="1" selected="@Model.MaDoKhan ===1?true:false">Hỏa tốc</option>
+                                <option value="2" selected="@Model.MaDoKhan ===2?true:false">Thượng khẩn</option>
+                                <option value="3" selected="@Model.MaDoKhan ===3?true:false">Khẩn</option>
                             </select>
                         </div>
 
@@ -96,51 +100,53 @@
                     <div class="col-4">
                         <div class="form-group">
                             <label>Trạng thái xử lý</label>
-                            <input class="form-control" type="text" value="@Model.TrangThaiXuLy" id="TrangThaiXuLy" />
+                            <input class="form-control" type="text" value="@Model.TrangThaiXuLy" name="TrangThaiXuLy" id="TrangThaiXuLy" />
                         </div>
                         <div class="form-group">
                             <label>Hạn giải quyết</label>
-                            <input class="form-control" type="date" value="@Model.HanGiaiQuyet" id="HanGiaiQuyet" />
+                            <input class="form-control" type="date" value="@Model.HanGiaiQuyet" name="HanGiaQuyet" id="HanGiaiQuyet" />
                         </div>
                         <div class="form-group">
                             <label>Số tờ</label>
-                            <input class="form-control" type="text" value="@Model.SoTo" id="SoTo" />
+                            <input class="form-control" type="text" value="@Model.SoTo" name="SoTo" id="SoTo" />
                         </div>
                         <div class="form-group">
                             <label>Chức vụ người ký</label>
-                            <input class="form-control" type="text" value="@Model.ChucVuNguoiKy" id="ChucVuNguoiKy" />
+                            <input class="form-control" type="text" value="@Model.ChucVuNguoiKy" name="ChucVuNguoiKy" id="ChucVuNguoiKy" />
                         </div>
                         <div class="form-group">
                             <label>Số hồ sơ</label>
-                            <input class="form-control" type="text" value="@Model.SoHoSo" id="SoHoSo" />
+                            <input class="form-control" type="text" value="@Model.SoHoSo" name="SoHoSo" id="SoHoSo" />
                         </div>
                         <div class="form-group">
                             <label for="LoaiVanBan">Loại văn bản</label>
-                            <select class="form-control" value="@Model.MaLoaiVanBan" id="LoaiVanBan">
-                                <option selected>Công văn</option>
-                                <option>Nghị quyết</option>
+                            <select class="form-control" name="MaLoaiVanBan" id="LoaiVanBan">
+                                <option value="1" selected="@Model.MaLoaiVanBan ===1?true:false">Nghị quyết</option>
+                                <option value="2" selected="@Model.MaLoaiVanBan ===2?true:false">Quyết định</option>
+                                <option value="3" selected="@Model.MaLoaiVanBan ===3?true:false">Chỉ thị</option>
+                                <option value="4" selected="@Model.MaLoaiVanBan ===4?true:false">Thông báo</option>
+                                <option value="5" selected="@Model.MaLoaiVanBan ===5?true:false">Công văn</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Ngày trả bảo mật</label>
-                            <input class="form-control" type="date" value="@Model.NgayTraBaoMat" id="NgayTraBaoMat" />
+                            <input class="form-control" type="date" value="@Model.NgayTraBaoMat" name="NgayTraBaoMat" id="NgayTraBaoMat" />
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
                             <label>Ghi chú</label>
-                            <input class="form-control" type="text" value="@Model.GhiChu" id="GhiChu" />
+                            <input class="form-control" type="text" value="@Model.GhiChu" name="GhiChu" id="GhiChu" />
                         </div>
                         <div class="form-group">
                             <label>Trích yếu</label>
-                            <textarea class="form-control" rows="3" value="@Model.TrichYeu" id="TrichYeu"></textarea>
+                            <textarea class="form-control" rows="3" value="@Model.TrichYeu" name="TrichYeu" id="TrichYeu"></textarea>
                         </div>
                         <div class="form-group">
                             <label>File đính kèm</label>
-                            <input type="file" class="form-control-file" id="file" />
+                            <input type="file" class="form-control-file" name="file" id="file" />
                         </div>
-                        <button type="button" class="btn btn-success btn-sm" onclick="editVB(@Model.MaVanBanDen)">Lưu</button>
-                        <button type="button" class="btn btn-info btn-sm" onclick="setState(@Model.MaVanBanDen)">Phê duyệt</button>
+                        <button type="submit" class="btn btn-success btn-sm">Lưu</button>
                         <a href="@Url.Action("GetList", "VanBanDen")"><i class="btn btn-warning btn-sm">Back</i></a>
                     </div>
                 </div>
@@ -149,7 +155,7 @@
         </div>
     </div>
 </div>
-<script>
+@*<script>
     const editVB = (id) => {
         const maVBden = $('#MaVanBanDen').val();
         const soVB = $('#SoVanBan').val();
@@ -197,23 +203,7 @@
 
         })
     }
-    const setState = (id) => {
-        var trangThaiXuLy = $('#TrangThaiXuLy').val();
-        /*  console.log(trangThaiXuLy);*/
-        trangThaiXuLy = 3;
-        console.log(trangThaiXuLy)
-        $.ajax({
-            success: function () {
-                alert(trangThaiXuLy);
-                window.location.href = "/VanBanDen/VBCanXuLy";
-
-            },
-            error: function (data) {
-                alert('Thêm mới không thành công')
-            }
-
-        })
-    }
-</script>
+   
+</script>*@
 
 

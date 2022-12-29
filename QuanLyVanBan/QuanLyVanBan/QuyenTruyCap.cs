@@ -26,15 +26,16 @@ namespace QuanLyVanBan.Models
                 else
                 {
                     MessageBox.Show("Bạn không có quyền thực hiện chức năng này ");
-                    //MessageBox.Show("Không có quyền");
-                    //var returnUrl = filterContext.RequestContext.HttpContext.Request.RawUrl;
-                    //filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(
-                    //    new
-                    //    {
-                    //        controller = "VanBanDen",
-                    //        action = "Create",
-                    //        returnUrl = returnUrl.ToString()
-                    //    }));
+                  
+                    var returnUrl = filterContext.RequestContext.HttpContext.Request.RawUrl;
+                    filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(
+                        new
+                        {
+                            controller = "Account",
+                            action = "Login",
+                            returnUrl = returnUrl.ToString()
+                        }));
+                    
                 }
             }
             else

@@ -9,6 +9,12 @@ namespace QuanLyVanBan.Models
     [Table("VanBanDi")]
     public partial class VanBanDi
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public VanBanDi()
+        {
+            LichSuThayDois = new HashSet<LichSuThayDoi>();
+        }
+
         [Key]
         public int MaVanBanDi { get; set; }
 
@@ -63,6 +69,9 @@ namespace QuanLyVanBan.Models
 
         public int? MaDoKhan { get; set; }
 
+        [Column(TypeName = "ntext")]
+        public string NoiDung { get; set; }
+
         public virtual DoKhan DoKhan { get; set; }
 
         public virtual DoMat DoMat { get; set; }
@@ -72,5 +81,8 @@ namespace QuanLyVanBan.Models
         public virtual LinhVucVanBan LinhVucVanBan { get; set; }
 
         public virtual LoaiVanBan LoaiVanBan { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LichSuThayDoi> LichSuThayDois { get; set; }
     }
 }

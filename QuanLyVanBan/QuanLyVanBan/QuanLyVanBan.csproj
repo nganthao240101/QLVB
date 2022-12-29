@@ -198,6 +198,7 @@
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProfileUserController.cs" />
     <Compile Include="Controllers\QLNguoiDungController.cs" />
     <Compile Include="Controllers\ThongKeController.cs" />
     <Compile Include="Controllers\VanBanDenController.cs" />
@@ -208,7 +209,6 @@
     <Compile Include="Models\CaNhan.cs" />
     <Compile Include="Models\ChiTietQuyen.cs" />
     <Compile Include="Models\ChucVu.cs" />
-    <Compile Include="Models\ChuyenVanBan.cs" />
     <Compile Include="Models\DoKhan.cs" />
     <Compile Include="Models\DoMat.cs" />
     <Compile Include="Models\DonVi.cs" />
@@ -218,13 +218,15 @@
     <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\NguoiDung_ChiTietQuyen.cs" />
     <Compile Include="Models\NhomQuyen.cs" />
-    <Compile Include="Models\QuyenTruyCap.cs" />
     <Compile Include="Models\Quyen.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\VanBanDen.cs" />
     <Compile Include="Models\VanBanDi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\Query.cs" />
+    <Compile Include="QuyenTruyCap.cs" />
     <Compile Include="SampleModels\ListVBden.cs" />
+    <Compile Include="Support\Support.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bold-reports\bold.reportdesigner.core.bootstrap.compatibility.min.css" />
@@ -2799,6 +2801,9 @@
     <Content Include="Views\Report\Index.cshtml" />
     <Content Include="Views\QLNguoiDung\getUser.cshtml" />
     <Content Include="Views\QLNguoiDung\ChiTietQuyen.cshtml" />
+    <Content Include="Views\QLNguoiDung\createUser.cshtml" />
+    <Content Include="Views\QLNguoiDung\editUser.cshtml" />
+    <Content Include="Views\ProfileUser\formUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />

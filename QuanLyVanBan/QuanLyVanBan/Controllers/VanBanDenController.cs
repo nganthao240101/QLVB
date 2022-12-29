@@ -23,6 +23,7 @@ namespace QuanLyVanBan.Controllers
             return View();
         }
         //[QuyenTruyCap(idMaQuyen = 1)]
+      
         public ActionResult GetList(int? trangThaiXL)
         {
             
@@ -42,7 +43,8 @@ namespace QuanLyVanBan.Controllers
             }
 
         }
-        //[QuyenTruyCap(idMaQuyen = 1)]
+    
+
         public ActionResult Details(int id)
         {
             using (Model1 db = new Model1())
@@ -81,7 +83,7 @@ namespace QuanLyVanBan.Controllers
             return RedirectToAction("GetList");
         }
 
-        //[QuyenTruyCap(idMaQuyen = 3)]
+       // [QuyenTruyCap(idMaQuyen = 3)]
         [HttpPost]
         public ActionResult DeleteVB(int? id)
         {
@@ -105,11 +107,11 @@ namespace QuanLyVanBan.Controllers
         }
         //[QuyenTruyCap(idMaQuyen = 2)]
         [HttpPost]
-        public ActionResult EditVanBan(VanBanDen model, int mavb, HttpPostedFileBase file)
+        public ActionResult EditVanBan(VanBanDen model, int MaVanBanDen, HttpPostedFileBase file)
         {
             using (Model1 db = new Model1())
             {
-                VanBanDen vb = db.VanBanDens.Where(s => s.MaVanBanDen == mavb).FirstOrDefault();
+                VanBanDen vb = db.VanBanDens.Where(s => s.MaVanBanDen == MaVanBanDen).FirstOrDefault();
                 if (vb != null)
                 {
                     string _FileName = "";
@@ -149,7 +151,7 @@ namespace QuanLyVanBan.Controllers
                 }
                
             }
-            return RedirectToAction("listVBdiDK");
+            return RedirectToAction("getList");
 
         }
 

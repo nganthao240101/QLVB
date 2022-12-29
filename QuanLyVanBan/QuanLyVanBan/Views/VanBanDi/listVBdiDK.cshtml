@@ -19,21 +19,25 @@
         <div class="card-header py-3">
             <div class="row">
                 <div class="col-6">
-                  @*  <h6 class="m-0 font-weight-bold text-primary">Danh sách đăng ký văn bản đi</h6>*@
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                        Danh sách văn bản đến
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="/VanBanDi/listVBdiDK?trangthai=0">Dự thảo</a></li>
-                        <li><a href="/VanBanDi/listVBdiDK?trangthai=1">Tiểu đoàn duyệt</a></li>
-                        <li><a href="/VanBanDi/listVBdiDK?trangthai=2">Tiểu đoàn đã duyệt</a></li>
-                        <li><a href="/VanBanDi/listVBdiDK?trangthai=3">Đã đăng ký</a></li>
-                    </ul>
+                    
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh sách văn bản đi
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/VanBanDi/listVBdiDK?trangthai=0">Văn bản dự thảo</a>
+                            <a class="dropdown-item" href="/VanBanDi/listVBdiDK?trangthai=1">Văn bản hợp lệ</a>
+                            <a class="dropdown-item" href="/VanBanDi/listVBdiDK?trangthai=2">Văn bản tiểu đoàn duyệt</a>
+                            <a class="dropdown-item" href="/VanBanDi/listVBdiDK?trangthai=3">Văn bản đã phát hành</a>
+
+                        </div>
+                    </div>
+                    
                 </div>
                
                 <div class="col-6">
                     <h6>
-                        <a class="btn btn-danger" style="float:right" href="/VanBanDi/createVBdi">Thêm mới</a>
+                        <a class="btn btn-danger" style="float:right" href="/VanBanDi/createVBdi">Dự thảo mới</a>
                         @*<a class="btn btn-info" style="float:right" href="/VanBanDen/Create">Chuyển xử lý</a>*@
 
                     </h6>
@@ -52,10 +56,6 @@
                             <th>Đơn vị nhận</th>
                             <th>Loại văn bản</th>
                             <th>Trích yếu</th>
-                            <th>Số bản</th>
-                            <th>Số tờ</th>
-                            <th>Độ mật</th>
-                            <th>Độ khẩn</th> 
                             <th>Trạng thái</th>
                             <th>Actions</th>
                         </tr>
@@ -72,10 +72,7 @@
                                 <td>@vb.DonViNhan</td>
                                 <td>@vb.MaLoaiVanBan</td>
                                 <td>@vb.TrichYeu</td>
-                                <td>@vb.SoBan</td>
-                                <td>@vb.SoTo</td>
-                                <td>@vb.MaDoMat</td>
-                                <td>@vb.MaDoKhan</td>
+                              
                                 @{
                                     if (@vb.TrangThai == 0)
                                     {
@@ -84,7 +81,7 @@
 
                                     else if (@vb.TrangThai == 1)
                                     {
-                                        <th>Tiểu đoàn duyệt</th>
+                                        <th></th>
                                     }
                                     else if (@vb.TrangThai == 2)
                                     {

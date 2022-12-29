@@ -10,28 +10,24 @@ namespace QuanLyVanBan.Models
     public partial class LichSuThayDoi
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MaThayDoi { get; set; }
 
-        [Required]
         [StringLength(256)]
-        public string SuKien { get; set; }
+        public string NoiDung { get; set; }
 
-        [Required]
-        [StringLength(256)]
-        public string TenDoiTuong { get; set; }
-
-        [Required]
-        [StringLength(256)]
-        public string LoaiDoiTuong { get; set; }
-
-        [Required]
-        public string CauLenhSQL { get; set; }
-
-        public DateTime ThoiGianThucHien { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? ThoiGianThucHien { get; set; }
 
         public int? MaCaNhan { get; set; }
 
+        public int? MaVanBanDen { get; set; }
+
+        public int? MaVanBanDi { get; set; }
+
         public virtual CaNhan CaNhan { get; set; }
+
+        public virtual VanBanDen VanBanDen { get; set; }
+
+        public virtual VanBanDi VanBanDi { get; set; }
     }
 }

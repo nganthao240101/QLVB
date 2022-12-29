@@ -21,7 +21,9 @@ namespace QuanLyVanBan.Controllers
         {
             using (Model1 db = new Model1())
             {
-                List<VanBanDi> list = db.VanBanDis.ToList();
+                CaNhan canha = (CaNhan)Session["canhan"];
+                List<VanBanDi> list = db.VanBanDis.Where(s=>s.MaDonVi == canha.MaDonVi).ToList();
+
                 if (trangthai != null)
                 {
                     list = db.VanBanDis.Where(s=>s.TrangThai == trangthai).ToList();
@@ -146,7 +148,8 @@ namespace QuanLyVanBan.Controllers
         {
             using(Model1 db = new Model1())
             {
-               
+                CaNhan user = (CaNhan)Session["canhan"];
+                content.MaDonVi = user.MaDonVi;
                 db.VanBanDis.Add(content);
                 db.SaveChanges();
                 return RedirectToAction("listVBdiDK");

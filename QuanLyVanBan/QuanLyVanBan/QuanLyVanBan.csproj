@@ -198,6 +198,7 @@
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HistoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\QLNguoiDungController.cs" />
     <Compile Include="Controllers\ThongKeController.cs" />
@@ -2799,6 +2800,7 @@
     <Content Include="Views\QLNguoiDung\ChiTietQuyen.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
     <Content Include="Views\VanBanDi\SoanThao.cshtml" />
+    <Content Include="Views\History\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />

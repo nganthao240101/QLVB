@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="row">
+            <div class="col-6">
+                @*  <h6 class="m-0 font-weight-bold text-primary">Danh sách đăng ký văn bản đi</h6>*@
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Danh sách văn bản đến
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="/VanBanDi/listVBdiDK?trangthai=0">Dự thảo</a></li>
+                    <li><a href="/VanBanDi/listVBdiDK?trangthai=1">Tiểu đoàn duyệt</a></li>
+                    <li><a href="/VanBanDi/listVBdiDK?trangthai=2">Tiểu đoàn đã duyệt</a></li>
+                    <li><a href="/VanBanDi/listVBdiDK?trangthai=3">Đã đăng ký</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <h6>
+                    <a class="btn btn-danger" style="float:right" href="/VanBanDi/createVBdi">Thêm mới</a>
+                    @*<a class="btn btn-info" style="float:right" href="/VanBanDen/Create">Chuyển xử lý</a>*@
+
+                </h6>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Mã văn bản đi</th>
+                        <th>Số văn bản</th>
+                        <th>Ngày văn bản</th>
+                        <th>Đơn vị nhận</th>
+                        <th>Trích yếu</th>
+                        <th>Số bản</th>
+                        <th>Số tờ</th>
+                        <th>Trạng thái</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                </tfoot>
+                <tbody>
+                    @foreach (var vb in Model)
+                    {
+                        <tr>
+                            <td>@vb.MaVanBanDi</td>
+                            <td>@vb.SoVanBan</td>
+                            <td>@vb.NgayVanBan</td>
+                            <td>@vb.DonViNhan</td>
+                            <td>@vb.TrichYeu</td>
+                            <td>@vb.SoBan</td>
+                            <td>@vb.SoTo</td>
+                            @{
+                                if (@vb.TrangThai == 0)
+                                {
+                                    <th>Dự thảo</th>
+                                }
+
+                                else if (@vb.TrangThai == 1)
+                                {
+                                    <th>Tiểu đoàn duyệt</th>
+                                }
+                                else if (@vb.TrangThai == 2)
+                                {
+                                    <th>Tiểu đoàn đã duyệt</th>
+                                }
+                                else if (@vb.TrangThai == 3)
+                                {
+                                    <th>Đã phát hành</th>
+                                }
+                            }
+                            <td>
+                                <div class="d-flex" style="gap:6px">
+                                    <a class="btn btn-info btn-sm" href="/VanBanDi/Detail?mavb=@vb.MaVanBanDi">
+                                        <i class="fa fa-info"></i>
+                                    </a>
+                                    <a class="btn btn-warning btn-sm" href="/VanBanDi/UpdateVBDI?mavb=@vb.MaVanBanDi">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a class="btn btn-danger btn-sm" onclick="xoaVB(@vb.MaVanBanDi)">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

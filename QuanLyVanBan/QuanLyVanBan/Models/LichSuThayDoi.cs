@@ -12,7 +12,7 @@ namespace QuanLyVanBan.Models
         [Key]
         public int MaThayDoi { get; set; }
 
-        [StringLength(256)]
+        [Column(TypeName = "ntext")]
         public string NoiDung { get; set; }
 
         [Column(TypeName = "date")]

@@ -52,6 +52,7 @@ namespace QuanLyVanBan.Models
 
         [StringLength(500)]
         public string TrichYeu { get; set; }
+        public bool? HopLe { get; set; }
 
         [Column("_file")]
         [StringLength(200)]

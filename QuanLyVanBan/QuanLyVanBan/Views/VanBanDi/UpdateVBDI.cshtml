@@ -134,7 +134,10 @@
 <script>
      (function () {
          document.getElementById("LoaiVanBan").selectedIndex = "@(Int16.Parse(Model.MaLoaiVanBan)-1)";
-         document.getElementById("LinhVuc").selectedIndex = "@(Int16.Parse(Model.MaLoaiVanBan)-1)";
+         document.getElementById("LinhVuc").selectedIndex = "@(Model.MaLinhVuc-1)";
+
+
+         
     }())
     tinymce.init({
         selector: '#data',

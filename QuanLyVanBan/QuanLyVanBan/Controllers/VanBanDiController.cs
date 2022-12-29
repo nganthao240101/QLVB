@@ -22,7 +22,7 @@ namespace QuanLyVanBan.Controllers
             using (Model1 db = new Model1())
             {
                 CaNhan canha = (CaNhan)Session["canhan"];
-                List<VanBanDi> list = db.VanBanDis.Where(s=>s.MaDonVi == canha.MaDonVi).ToList();
+                List<VanBanDi> list = db.VanBanDis.ToList();
 
                 if (trangthai != null)
                 {

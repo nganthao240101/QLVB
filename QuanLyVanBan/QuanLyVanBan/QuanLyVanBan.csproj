@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyVanBan</RootNamespace>
     <AssemblyName>QuanLyVanBan</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -220,14 +220,12 @@
     <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\NguoiDung_ChiTietQuyen.cs" />
     <Compile Include="Models\NhomQuyen.cs" />
-    <Compile Include="Models\QuyenTruyCap.cs" />
     <Compile Include="Models\Quyen.cs" />
+    <Compile Include="Models\QuyenTruyCap.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\VanBanDen.cs" />
     <Compile Include="Models\VanBanDi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query\Query.cs" />
-    <Compile Include="QuyenTruyCap.cs" />
     <Compile Include="SampleModels\ListVBden.cs" />
     <Compile Include="Support\Support.cs" />
   </ItemGroup>
@@ -2794,9 +2792,6 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\ThongKe\Bieudo.cshtml" />
     <Content Include="Views\ThongKe\BangThongKe.cshtml" />
-    <Content Include="Views\VanBanDen\ListVBCanXuLy.cshtml" />
-    <Content Include="Views\VanBanDen\VBCanThuHoi.cshtml" />
-    <Content Include="Views\VanBanDen\VBCanXuLy.cshtml" />
     <Content Include="Views\VanBanDi\listVBdiDK.cshtml" />
     <Content Include="Views\VanBanDi\Detail.cshtml" />
     <Content Include="Views\VanBanDi\UpdateVBDI.cshtml" />

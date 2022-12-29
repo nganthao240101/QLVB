@@ -39,14 +39,14 @@ namespace QuanLyVanBan.Controllers
                 }
                 else 
                 {
-                    var tenDN = db.CaNhans.Where(m => m.TenDangNhap == TenDangNhap).FirstOrDefault();
-                    if (tenDN.TenDangNhap==TenDangNhap)
-                    {
+                    //var tenDN = db.CaNhans.Where(m => m.TenDangNhap == TenDangNhap).FirstOrDefault();
+                    //if (tenDN.TenDangNhap==TenDangNhap)
+                    //{
                       
-                            TempData["Error"] = "Tên đăng ký đã tồn tại";
+                    //        TempData["Error"] = "Tên đăng ký đã tồn tại";
 
-                    }
-                    else {
+                    //}
+                    //else {
                         CaNhan cn = new CaNhan();
                         cn.TenCaNhan = TenCaNhan;
                         cn.email = Email;
@@ -58,7 +58,7 @@ namespace QuanLyVanBan.Controllers
                         db.CaNhans.Add(cn);
                         db.SaveChanges();
                         return Json("Đăng kí thành công");
-                    }
+                    //}
                     
                 }
                 return Json("Đăng kí thất bại ");
@@ -141,7 +141,7 @@ namespace QuanLyVanBan.Controllers
                 //}
                
             }
-            return View();
+           return Redirect("/VanBanDen/GetList");
         }
         public ActionResult Dashborad()
         {

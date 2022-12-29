@@ -1,0 +1,4 @@
+Xác định rủi ro liên quan đến hệ thống: bảo mật, dữ liệu, hệ thống
+Đánh giá mức độ nguy cơ của rủi ro 
+Phần mền không thể đọc các tệp văn bản đúng theo định dạng 
+

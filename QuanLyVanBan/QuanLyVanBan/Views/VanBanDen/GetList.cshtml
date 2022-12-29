@@ -10,29 +10,69 @@
     <div class="card-header py-3">
         <div class="row">
             <div class="col-6">
-                <h6 class="m-0 font-weight-bold text-primary">
+                @foreach (var vb in ViewBag.vbden)
+                {
+                    if (@vb.TrangThaiXuLy == 0)
+                    {
 
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Danh sách văn bản đến
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=1">Văn bản đã duyệt</a>
-                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=2">Văn bản chuyển xử lý</a>
-                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=3">Văn bản đã thu hồi</a>
 
-                        </div>
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            Danh sách văn bản nhập mới
+                        </h6>
+            
+                }
+                else if (@vb.TrangThaiXuLy == 1)
+                {
+            
+
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            Danh sách văn phê duyệt
+                        </h6>
+
+
+                }
+                else if (@vb.TrangThaiXuLy == 0)
+                {
+           
+
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            Danh sách văn bản đã chuyển xử lý
+                        </h6>
+          
+                }
+                else if (@vb.TrangThaiXuLy == 0)
+                {
+                    <div class="col-6">
+
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            Danh sách văn bản thu hồi
+                        </h6>
                     </div>
-                </h6>
-            </div>
+                }
+                else
+                {
+                    <div class="col-6">
 
-            <div class="col-6">
-                <h6>
-                    <a class="btn btn-danger" style="float:right" href="/VanBanDen/Create">Thêm mới</a>
-
-                </h6>
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            Danh sách văn bản đến
+                        </h6>
+                    </div>
+                }
+            }
             </div>
-        </div>
+                <div class="col-6">
+
+                    <h6 class="m-0 font-weight-bold text-primary">
+                    </h6>
+                </div>
+
+                <div class="col-6">
+                    <h6>
+                        <a class="btn btn-danger" style="float:right" href="/VanBanDen/Create">Thêm mới</a>
+
+                    </h6>
+                </div>
+            </div>
 
     </div>
     <div class="card-body">
@@ -95,11 +135,11 @@
                                     <th>Đã duyệt</th>
 
                                 }
-                                else if (@vb.TrangThaiXuLy == 0)
+                                else if (@vb.TrangThaiXuLy == 2)
                                 {
                                     <th>Chuyển xử lý</th>
                                 }
-                                else if (@vb.TrangThaiXuLy == 0)
+                                else if (@vb.TrangThaiXuLy == 3)
                                 {
                                     <th>Thu hồi</th>
                                 }

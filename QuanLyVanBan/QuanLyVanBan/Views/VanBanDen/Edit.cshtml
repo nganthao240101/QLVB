@@ -14,15 +14,15 @@
     </div>
     <div class="card-body">
         <div class="container-fluid">
-            <form>
+            <form method="post" action="/VanBanDen/EditVanBan">
 
                 <div class="row">
                     <div class="col-4">
                         <div class="form-group">
 
                             <label>Số văn bản</label>
-                            <input class="form-control" type="text" value="@Model.SoVanBan" id="SoVanBan" />
-                            <input hidden class="form-control" type="text" value="@Model.MaVanBanDen" id="MaVanBanDen" />
+                            <input class="form-control" type="text" name="SoVanBan" value="@Model.SoVanBan" id="SoVanBan" />
+                            <input hidden class="form-control" type="text" name="MaVanBanDen" value="@Model.MaVanBanDen" id="MaVanBanDen" />
                         </div>
                         <div class="form-group">
                             <label>Ngày văn bản</label>
@@ -139,7 +139,7 @@
                             <label>File đính kèm</label>
                             <input type="file" class="form-control-file" id="file" />
                         </div>
-                        <button type="button" class="btn btn-success btn-sm" onclick="editVB(@Model.MaVanBanDen)">Lưu</button>
+                        <button type="submit" class="btn btn-success btn-sm" >Lưu</button>
                         <button type="button" class="btn btn-info btn-sm" onclick="setState(@Model.MaVanBanDen)">Phê duyệt</button>
                         <a href="@Url.Action("GetList", "VanBanDen")"><i class="btn btn-warning btn-sm">Back</i></a>
                     </div>

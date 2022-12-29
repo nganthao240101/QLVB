@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyVanBan</RootNamespace>
     <AssemblyName>QuanLyVanBan</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -197,6 +197,8 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HistoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProfileUserController.cs" />
     <Compile Include="Controllers\QLNguoiDungController.cs" />
@@ -218,6 +220,7 @@
     <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\NguoiDung_ChiTietQuyen.cs" />
     <Compile Include="Models\NhomQuyen.cs" />
+    <Compile Include="Models\QuyenTruyCap.cs" />
     <Compile Include="Models\Quyen.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\VanBanDen.cs" />
@@ -2795,7 +2798,6 @@
     <Content Include="Views\VanBanDen\VBCanThuHoi.cshtml" />
     <Content Include="Views\VanBanDen\VBCanXuLy.cshtml" />
     <Content Include="Views\VanBanDi\listVBdiDK.cshtml" />
-    <Content Include="Views\VanBanDi\createVBdi.cshtml" />
     <Content Include="Views\VanBanDi\Detail.cshtml" />
     <Content Include="Views\VanBanDi\UpdateVBDI.cshtml" />
     <Content Include="Views\Report\Index.cshtml" />
@@ -2804,6 +2806,9 @@
     <Content Include="Views\QLNguoiDung\createUser.cshtml" />
     <Content Include="Views\QLNguoiDung\editUser.cshtml" />
     <Content Include="Views\ProfileUser\formUser.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\VanBanDi\SoanThao.cshtml" />
+    <Content Include="Views\History\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />

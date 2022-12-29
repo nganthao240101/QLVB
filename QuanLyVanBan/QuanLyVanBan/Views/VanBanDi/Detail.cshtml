@@ -120,8 +120,11 @@
                             <label>File đính kèm</label>
                             <input type="file" class="form-control-file" id="file" />
                         </div>
+                        <textarea id="data" name="content">
+    
+                        </textarea>
                         @{
-                            if (Model.TrangThai == 0) 
+                            if (Model.TrangThai == 0)
                             {
                                 <a onclick="changeStatus(event,@Model.TrangThai,@Model.MaVanBanDi)"><i class="btn btn-success btn-sm">Văn Bản Hợp Lệ</i></a>
                             }
@@ -145,6 +148,26 @@
 </div>
 
 <script>
+    tinymce.init({
+        selector: '#data',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ],
+        height: "1000",
+        init_instance_callback: function (editor) {
+           var txt = document.createElement("textarea");
+            txt.innerHTML = `@(Model.NoiDung)`;
+            console.log(txt.value)
+            editor.setContent(txt.value);
+
+
+        }
+    });
     const changeStatus = (e, status,mavb)=>{
         $.ajax({
             method: "Post",

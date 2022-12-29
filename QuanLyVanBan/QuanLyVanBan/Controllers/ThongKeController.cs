@@ -17,13 +17,13 @@ namespace QuanLyVanBan.Controllers
             {
                 int Total_vanbanden = db.VanBanDens.Count();
                 int Total_vanbandi = db.VanBanDis.Count();
-                int Total_chuyenvanban = db.VanBanDis.Count();
+               /* int Total_chuyenvanban = db.ChuyenVanBans.Count();*/
                 int Total_vanbanden_dxl = db.VanBanDens.Where(c => c.TrangThaiXuLy == 1).Count();
                 int Total_vanbanden_cxl = db.VanBanDens.Where(c => c.TrangThaiXuLy == 0).Count();
                 Dictionary<string, int> data = new Dictionary<string, int>();
                 data.Add("Văn bản đến", Total_vanbanden);
                 data.Add("Văn bản đi", Total_vanbandi);
-                data.Add("Văn bản đã chuyển", Total_chuyenvanban);
+              /*  data.Add("Văn bản đã chuyển", Total_chuyenvanban);*/
                 data.Add("Văn bản đã xử lí", Total_vanbanden_dxl);
                 data.Add("Văn bản chưa xử lí", Total_vanbanden_cxl);
                 //Donut Chart

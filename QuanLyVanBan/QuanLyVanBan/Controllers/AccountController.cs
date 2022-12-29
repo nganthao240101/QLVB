@@ -105,11 +105,14 @@ namespace QuanLyVanBan.Controllers
                 if (taiKhoan != null && taiKhoan.MatKhau == MatKhau)
                 {
                     var ob = db.NguoiDung_ChiTietQuyen.Where(s => s.MaCaNhan == taiKhoan.MaCaNhan).FirstOrDefault();
+
                     if (ob != null)
                     {
+                        CaNhan canhan = db.CaNhans.Where(s => s.MaCaNhan == ob.MaCaNhan).FirstOrDefault();
                         Session["user"] = ob;
                         Session["nhomQ"] = ob.MaNhomQuyen;
                         Session["fullName"] = taiKhoan.TenCaNhan.ToString();
+                        Session["canhan"] = canhan; 
 
                         return RedirectToAction("Index", "Home");
 

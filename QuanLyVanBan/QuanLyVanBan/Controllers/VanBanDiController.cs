@@ -21,7 +21,9 @@ namespace QuanLyVanBan.Controllers
         {
             using (Model1 db = new Model1())
             {
-                List<VanBanDi> list = db.VanBanDis.ToList();
+                CaNhan canha = (CaNhan)Session["canhan"];
+                List<VanBanDi> list = db.VanBanDis.Where(s=>s.MaDonVi == canha.MaDonVi).ToList();
+
                 if (trangthai != null)
                 {
                     list = db.VanBanDis.Where(s=>s.TrangThai == trangthai).ToList();
@@ -36,7 +38,7 @@ namespace QuanLyVanBan.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult addVBdi(VanBanDi vb, HttpPostedFileBase file)
+        public ActionResult addVBdi(VanBanDi vb, HttpPostedFileBase file,string content)
         {
             using (Model1 db = new Model1())
             {
@@ -81,7 +83,8 @@ namespace QuanLyVanBan.Controllers
             }
         }
         [HttpPost]
-        public ActionResult Update(VanBanDi model,int mavb, HttpPostedFileBase file)
+        [ValidateInput(false)]
+        public ActionResult Update(VanBanDi model,int mavb, HttpPostedFileBase file,string content)
         {
             using (Model1 db = new Model1())
             {
@@ -134,6 +137,23 @@ namespace QuanLyVanBan.Controllers
 
             }
             return Json("https://localhost:44309/VanBanDi/listVBdiDK?trangthai="+(trangthai+1));
+        }
+        public ActionResult SoanThao()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult SoanThaoND(VanBanDi content)
+        {
+            using(Model1 db = new Model1())
+            {
+                CaNhan user = (CaNhan)Session["canhan"];
+                content.MaDonVi = user.MaDonVi;
+                db.VanBanDis.Add(content);
+                db.SaveChanges();
+                return RedirectToAction("listVBdiDK");
+            }
         }
     }
 }

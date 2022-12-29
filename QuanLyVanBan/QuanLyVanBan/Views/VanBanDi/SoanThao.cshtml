@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "SoanThao";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Soạn thảo văn bản đi</h6>
+    </div>
+    <div class="card-body">
+        <div class="container-fluid">
+            <form method="post" action="/VanBanDi/SoanThaoND">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="LinhVuc">Lĩnh vực</label>
+                            <select class="form-control" name="MaLinhVuc" id="LinhVuc">
+                                <option value="1">Chính trị</option>
+                                <option value="2">Quân sự - Hành chính</option>
+                                <option value="3">Hậu cần - Kĩ thuật</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="DoKhan">Độ khẩn</label>
+                            <select class="form-control" name="MaDoKhan" id="DoKhan">
+                                <option value="1">Hỏa tốc</option>
+                                <option value="2">Thượng khẩn</option>
+                                <option value="3">Khẩn</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="NgonNgu">Ngôn ngữ</label>
+                            <select class="form-control" name="NgonNgu" id="NgonNgu">
+                                <option value="Tiếng Anh">Tiếng Anh</option>
+                                <option value="Tiếng Việt">Tiếng Việt</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="LoaiVanBan">Loại văn bản</label>
+                            <select class="form-control" name="MaLoaiVanBan" id="LoaiVanBan">
+
+                                <option value="1">Nghị quyết</option>
+                                <option value="2">Quyết định</option>
+                                <option value="3">Chỉ thị</option>
+                                <option value="4">Thông báo</option>
+                                <option value="5">Công văn</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="DoMat">Độ mật</label>
+                            <select class="form-control" name="MaDoMat" id="DoMat">
+                                <option value="1">Tuyệt mật</option>
+                                <option value="2">Tối mật</option>
+                                <option value="3">Mật</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Đơn vị nhân</label>
+                            <input class="form-control" type="text" name="DonViNhan" value="" id="DonViNhan" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Nội dung</label>
+                    <textarea id="data" name="NoiDung">
+    
+                    </textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-sm pt-2">Thêm mới văn bản</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    tinymce.init({
+        selector: '#data',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ],
+        height: "1000"
+    });
+    const handleClick = (e) => {
+        var myContent = tinymce.activeEditor.getContent();
+        $.ajax({
+            method: "post",
+            data: {
+                content: myContent
+            },
+            url:"/VanBanDi/SoanThaoND"
+        })
+    }
+</script>
+

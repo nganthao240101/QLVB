@@ -13,6 +13,7 @@ using iTextSharp.tool.xml;
 using QuanLyVanBan.Models;
 using QuanLyVanBan.SampleModels;
 
+
 namespace QuanLyVanBan.Controllers
 {
     public class VanBanDenController : Controller
@@ -22,7 +23,7 @@ namespace QuanLyVanBan.Controllers
         {
             return View();
         }
-        //[QuyenTruyCap(idMaQuyen = 1)]
+        [QuyenTruyCap(idMaQuyen = 1)]
         public ActionResult GetList(int? trangThaiXL)
         {
             
@@ -42,7 +43,7 @@ namespace QuanLyVanBan.Controllers
             }
 
         }
-        //[QuyenTruyCap(idMaQuyen = 1)]
+        [QuyenTruyCap(idMaQuyen = 1)]
         public ActionResult Details(int id)
         {
             using (Model1 db = new Model1())
@@ -81,8 +82,9 @@ namespace QuanLyVanBan.Controllers
             return RedirectToAction("GetList");
         }
 
-        //[QuyenTruyCap(idMaQuyen = 3)]
+        [QuyenTruyCap(idMaQuyen = 3)]
         [HttpPost]
+       
         public ActionResult DeleteVB(int? id)
         {
             using (Model1 db = new Model1())
@@ -94,7 +96,7 @@ namespace QuanLyVanBan.Controllers
             }
             return RedirectToAction("GetList");
         }
-        //[QuyenTruyCap(idMaQuyen = 1)]
+        [QuyenTruyCap(idMaQuyen = 1)]
         public ActionResult Edit(int? id)
         {
             using (Model1 db = new Model1())
@@ -103,7 +105,7 @@ namespace QuanLyVanBan.Controllers
                 return View(obj);
             }
         }
-        //[QuyenTruyCap(idMaQuyen = 2)]
+        [QuyenTruyCap(idMaQuyen = 2)]
         [HttpPost]
         public ActionResult EditVanBan(VanBanDen model, int mavb, HttpPostedFileBase file)
         {

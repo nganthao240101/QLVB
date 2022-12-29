@@ -44,8 +44,6 @@
                     <tr>
 
                         <th>STT</th>
-                        <th>Mã nhóm quyền</th>
-                        <th>Tên nhóm quyền</th>
                         <th>Chức năng</th>
                         <th>Selected</th>
 
@@ -57,38 +55,33 @@
 
                     @using (var db = new Model1())
                     {
+                        int Mand = ViewBag.maNhomQ;
                         var ob = (from s in db.ChiTietQuyens
+                                  join nq in db.NhomQuyens on s.MaNhomQuyen equals nq.MaNhomQuyen
+                                  join nd in db.NguoiDung_ChiTietQuyen on nq.MaNhomQuyen equals nd.MaNhomQuyen
+                                  where nd.MaCaNhan == Mand
+                                  select new {s.ChucNang,s.CheckQuyen_ChucNang,nq.TenNhomQuyen,s.MaChiTietQuyen }  ).ToList();
 
-                                  select new {s.ChucNang,s.CheckQuyen_ChucNang } ).ToList();
 
-                    ViewBag.objects = ob;
-
-                    foreach (var cn in ob)
-                    {
+                        int i = 1;
+                        foreach (var cn in ob)
+                        {
 
                     <tr>
-                        <td>1</td>
-                        
-                        @*<td>@cn.MaNhomQuyen</td>
-                        <td>@cn.TenNhomQuyen</td>*@
+                        <td>@i</td>
+
+                        @*<td>@cn.MaNhomQuyen</td>*@
                         <td>@cn.ChucNang</td>
                         <td>
-                            @if (cn.CheckQuyen_ChucNang == true)
-                            {
+                            
 
 
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                                    <label class="custom-control-label" for="customCheck1">1</label>
+                                <div>
+                                    <input type="checkbox"  id="check1" onchange="handleCheck(event,@cn.MaChiTietQuyen)" checked="@cn.CheckQuyen_ChucNang">
+                                  
                                 </div>
-                            }
-                            else
-                            {
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">1</label>
-                                </div>
-                            }
+                           
+
                         </td>
                         
 
@@ -113,7 +106,9 @@
                         </td>*@
 
                     </tr>
+                            i++;
                         }
+
                     }
                 </tbody>
             </table>
@@ -130,6 +125,21 @@
 
 
 
-
+<script>
+    const handleCheck = (e,ma) => {
+            $.ajax({
+                method: "post",
+                data: {
+                    ma: ma,
+                    check: e.target.checked ? true : false
+                },
+                url: "/QLNguoiDung/changeRole",
+                success: (data) => {
+                    alert("Thay đổi thành công")
+                    window.location.reload()
+                }
+            })
+    }
+</script>
 
 

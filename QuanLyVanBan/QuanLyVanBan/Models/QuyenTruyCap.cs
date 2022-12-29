@@ -13,12 +13,11 @@ namespace QuanLyVanBan.Models
         public int idMaQuyen { get; set; }
         public override void OnAuthorization(AuthorizationContext filterContext)
         {
-            int cnSession = (int)HttpContext.Current.Session["nhomQ"];
-            //NguoiDung_ChiTietQuyen cnSession = (NguoiDung_ChiTietQuyen)HttpContext.Current.Session["user"];
+            NguoiDung_ChiTietQuyen cnSession = (NguoiDung_ChiTietQuyen)HttpContext.Current.Session["user"];
             if (cnSession != null)
             {
                 Model1 db = new Model1();
-                var count = db.ChiTietQuyens.Where(s => s.MaNhomQuyen == cnSession && s.MaQuyen == idMaQuyen).Count();
+                var count = db.ChiTietQuyens.Where(s => s.MaNhomQuyen == cnSession.MaNhomQuyen && s.MaQuyen == idMaQuyen).Count();
                 if (count != 0)
                 {
                     return;
@@ -27,14 +26,14 @@ namespace QuanLyVanBan.Models
                 {
                     MessageBox.Show("Bạn không có quyền thực hiện chức năng này ");
                     //MessageBox.Show("Không có quyền");
-                    //var returnUrl = filterContext.RequestContext.HttpContext.Request.RawUrl;
-                    //filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(
-                    //    new
-                    //    {
-                    //        controller = "VanBanDen",
-                    //        action = "Create",
-                    //        returnUrl = returnUrl.ToString()
-                    //    }));
+                    var returnUrl = filterContext.RequestContext.HttpContext.Request.RawUrl;
+                    filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(
+                        new
+                        {
+                            controller = "Error",
+                            action = "Index",
+                            returnUrl = returnUrl.ToString()
+                        }));
                 }
             }
             else

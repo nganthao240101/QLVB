@@ -20,7 +20,7 @@ namespace QuanLyVanBan.Controllers
             {
                 var ob = db.CaNhans.ToList();
                 ViewBag.listUser = ob;
-                return View();
+                return View(ob);
             }
                
         }
@@ -38,9 +38,39 @@ namespace QuanLyVanBan.Controllers
 
                 //          }).ToList();
                 //ViewBag.objects = ob;
-                
+                ViewBag.maNhomQ = maNhomQ;
                 return View(o);
             }
         }
+        [HttpPost]
+        public ActionResult changeRole (int ma, bool check)
+        {
+            using (var db = new Model1())
+            {
+                var Role = db.ChiTietQuyens.Find(ma);
+                if(Role != null)
+                {
+                    Role.CheckQuyen_ChucNang = check;
+                    db.SaveChanges();
+                }
+                return Json("Ok");
+            }
+            
+        }
+        [HttpPost]
+        public ActionResult DeleteUser (int ma)
+        {
+            using (var db = new Model1()) 
+            {
+                CaNhan User = db.CaNhans.Find(ma);
+                if (User != null)
+                {
+                    db.CaNhans.Remove(User);
+                    db.SaveChanges();
+                }
+                return Json("Ok");
+            }
+        }
     }
+
 }

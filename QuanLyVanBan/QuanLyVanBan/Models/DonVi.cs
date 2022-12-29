@@ -13,7 +13,6 @@ namespace QuanLyVanBan.Models
         public DonVi()
         {
             CaNhans = new HashSet<CaNhan>();
-            ChuyenVanBans = new HashSet<ChuyenVanBan>();
             VanBanDens = new HashSet<VanBanDen>();
             VanBanDis = new HashSet<VanBanDi>();
         }
@@ -27,9 +26,6 @@ namespace QuanLyVanBan.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CaNhan> CaNhans { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChuyenVanBan> ChuyenVanBans { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VanBanDen> VanBanDens { get; set; }

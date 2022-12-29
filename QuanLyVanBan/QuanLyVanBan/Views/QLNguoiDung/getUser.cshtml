@@ -3,7 +3,8 @@
     ViewBag.Title = "getUser";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@using QuanLyVanBan.Models
+@model List<CaNhan>
 
 
 <div class="card shadow mb-4">
@@ -13,17 +14,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">
                     Danh sách người dùng
 
-                    @*<div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Văn bản đến
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=1">Văn bản đã duyệt</a>
-                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=2">Văn bản chuyển xử lý</a>
-                            <a class="dropdown-item" href="/VanBanDen/GetList?trangThaiXL=3">Văn bản đã thu hồi</a>
-
-                        </div>
-                    </div>*@
+                   
                 </h6>
             </div>
 
@@ -47,10 +38,6 @@
                         <th>Tên cá nhân</th>
                         <th>SĐT</th>
                         <th>Email</th>
-                        @*<th>Số bản</th>
-                            <th>Số tờ</th>
-                            <th>Độ mật</th>
-                            <th>Độ khẩn</th>*@
                         <th>Mã đơn vị</th>
                         <th>Mã chức vụ</th>
                         <td>Lịch sử truy cập</td>
@@ -62,7 +49,7 @@
                 </tfoot>
                 <tbody>
 
-                    @foreach (var cn in ViewBag.listUser)
+                    @foreach (var cn in Model)
                         {
 
                         <tr>
@@ -78,12 +65,12 @@
                 <td>@cn.MaDoKhan</td>*@
 
 
-                            }
+                            
 
 
                             <td>
                                 <div class="d-flex">
-                                    <a class="btn btn-info btn-sm" href="/QLNguoiDung/ChiTietQuyen?maNhomQ=@cn.MaNhomQuyen">
+                                    <a class="btn btn-info btn-sm" href="/QLNguoiDung/ChiTietQuyen?maNhomQ=@cn.MaCaNhan">
                                         <i class="fa fa-info"></i>
                                     </a>
                                     <a class="btn btn-warning btn-sm" href="/VanBanDen/Edit/@cn.MaCaNhan">
@@ -110,7 +97,25 @@
         </div>
     </div>
 </div>
-
+<script>
+    const xoacn = (ma) => {
+        if (confirm("Bán có muốn xóa người dùng không")) {
+        $.ajax({
+            method: "post",
+            url: '/QlNguoiDung/DeleteUser',
+            data: {
+                ma:ma
+            },
+            success: (data) => {
+              
+                    alert("Xóa thành công")
+                    window.location.reload();
+               
+            }
+        })
+        }
+    }
+</script>
 
 
 

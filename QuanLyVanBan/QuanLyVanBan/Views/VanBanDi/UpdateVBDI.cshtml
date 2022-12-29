@@ -34,8 +34,8 @@
                         <div class="form-group">
                             <label for="NgonNgu">Ngôn ngữ</label>
                             <select class="form-control"  name="NgonNgu" id="NgonNgu">
-                                <option value="Tiếng Anh" selected="@Model.NgonNgu ==='Tiếng Anh'?true:false">Tiếng Anh</option>
-                                <option value="Tiếng Việt" selected="@Model.NgonNgu ==='Tiếng Việt'?true:false">Tiếng Việt</option>
+                                <option value="Tiếng Anh" >Tiếng Anh</option>
+                                <option value="Tiếng Việt" >Tiếng Việt</option>
                             </select>
                         </div>
 
@@ -57,17 +57,17 @@
                         <div class="form-group">
                             <label for="LinhVuc">Lĩnh vực</label>
                             <select class="form-control"  name="MaLinhVuc" id="LinhVuc">
-                                <option value="1" selected="@Model.MaLinhVuc ===1?true:false">Chính trị</option>
-                                <option value="2" selected="@Model.MaLinhVuc ===2?true:false">Quân sự - Hành chính</option>
-                                <option value="3" selected="@Model.MaLinhVuc ===3?true:false">Hậu cần - Kĩ thuật</option>
+                                <option value="1" >Chính trị</option>
+                                <option value="2" >Quân sự - Hành chính</option>
+                                <option value="3" >Hậu cần - Kĩ thuật</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="DoKhan">Độ khẩn</label>
                             <select class="form-control"  name="MaDoKhan" id="DoKhan">
-                                <option value="1" selected="@Model.MaDoKhan ===1?true:false">Hỏa tốc</option>
-                                <option value="2" selected="@Model.MaDoKhan ===2?true:false">Thượng khẩn</option>
-                                <option value="3" selected="@Model.MaDoKhan ===3?true:false">Khẩn</option>
+                                <option value="1" >Hỏa tốc</option>
+                                <option value="2" >Thượng khẩn</option>
+                                <option value="3" >Khẩn</option>
                             </select>
                         </div>
 
@@ -89,19 +89,19 @@
                             <label for="LoaiVanBan">Loại văn bản</label>
                             <select class="form-control"  name="MaLoaiVanBan" id="LoaiVanBan">
 
-                                <option value="1" selected="@Model.MaLoaiVanBan ===1?true:false">Nghị quyết</option>
-                                <option value="2" selected="@Model.MaLoaiVanBan ===2?true:false">Quyết định</option>
-                                <option value="3" selected="@Model.MaLoaiVanBan ===3?true:false">Chỉ thị</option>
-                                <option value="4" selected="@Model.MaLoaiVanBan ===4?true:false">Thông báo</option>
-                                <option value="5" selected="@Model.MaLoaiVanBan ===5?true:false">Công văn</option>
+                                <option value="1" >Nghị quyết</option>
+                                <option value="2" >Quyết định</option>
+                                <option value="3" >Chỉ thị</option>
+                                <option value="4" >Thông báo</option>
+                                <option value="5" >Công văn</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="DoMat">Độ mật</label>
                             <select class="form-control"  name="MaDoMat" id="DoMat">
-                                <option value="1" selected="@Model.MaDoMat ===1?true:false">Tuyệt mật</option>
-                                <option value="2" selected="@Model.MaDoMat ===2?true:false">Tối mật</option>
-                                <option value="3" selected="@Model.MaDoMat ===3?true:false">Mật</option>
+                                <option value="1" >Tuyệt mật</option>
+                                <option value="2" >Tối mật</option>
+                                <option value="3" >Mật</option>
 
 
                             </select>
@@ -120,6 +120,9 @@
                             <label>File đính kèm</label>
                             <input type="file" name="file" class="form-control-file" id="file" />
                         </div>
+                        <textarea id="data" name="content">
+    
+                        </textarea>
                         <button type="submit" class="btn btn-success btn-sm">Chỉnh sửa</button>
                         <a href="@Url.Action("GetList", "VanBanDen")"><i class="btn btn-warning btn-sm">Quay lại</i></a>
                     </div>
@@ -128,4 +131,34 @@
         </div>
     </div>
 </div>
+<script>
+     (function () {
+         document.getElementById("LoaiVanBan").selectedIndex = "@(Int16.Parse(Model.MaLoaiVanBan)-1)";
+         document.getElementById("LinhVuc").selectedIndex = "@(Int16.Parse(Model.MaLoaiVanBan)-1)";
+         document.getElementById("DoMat").selectedIndex = "@(Int16.Parse(Model.MaDoMat)-1)";
+    }())
+    tinymce.init({
+        selector: '#data',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ],
+        height: "1000",
+        init_instance_callback: function (editor) {
+           var txt = document.createElement("textarea");
+            txt.innerHTML = `@(Model.NoiDung)`;
+            editor.setContent(txt.value);
+
+
+        }
+    });
+
+
+
+
+</script>
 

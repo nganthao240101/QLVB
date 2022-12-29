@@ -38,6 +38,12 @@ namespace QuanLyVanBan.Models
 
         public int? MaChucVu { get; set; }
 
+        [StringLength(50)]
+        public string CapBac { get; set; }
+
+        [Column(TypeName = "ntext")]
+        public string MoTa { get; set; }
+
         public virtual ChucVu ChucVu { get; set; }
 
         public virtual DonVi DonVi { get; set; }
